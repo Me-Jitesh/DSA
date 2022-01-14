@@ -4,8 +4,11 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
-        // Linear search In 1-D Array
-        linSeaIndex1d();
+        // Linear search In 1-D Array ; Return Index
+        // linSeaIndex1d();
+
+        // Linear search In 1-D Array ; Return Value
+        linSeaVal1d();
 
     }
 
@@ -19,5 +22,15 @@ public class LearningDsa {
         } else {
             System.out.println("Find at Index : " + index);
         }
+    }
+
+    static void linSeaVal1d() {
+        // int[] arr = {};
+        int[] arr = { 20, 90, 50, 60, 33, 44, 34, 43, 76, 23 };
+
+        int val = new LinearSearch().searchValueInOneDim(arr, 33);
+
+        System.out.println("Find Value : " + val);
+
     }
 }

@@ -9,6 +9,7 @@ package array.linearsearch;
 
 public class LinearSearch {
 
+    // Return Index
     public int searchInOneDim(int arr[], int num) {
 
         for (int i = 0; i < arr.length; i++) {
@@ -16,6 +17,17 @@ public class LinearSearch {
                 return i;
             }
         }
-        return -1;
+        return -1; // Here We can Return -1 Because array index cannot be negative index
+    }
+
+    // Return Value
+    public int searchValueInOneDim(int arr[], int num) {
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == num) {
+                return arr[i];
+            }
+        }
+        return Integer.MAX_VALUE; // Here We cannot Return -1 Because it may be a value of array
     }
 }
