@@ -11,7 +11,10 @@ public class LearningDsa {
         // linSeaVal1d();
 
         // Search Charecter In String
-        searchChar();
+        // searchChar();
+
+        // Search Charecter In String Array
+        searchCharStrArr();
 
     }
 
@@ -38,9 +41,8 @@ public class LearningDsa {
     }
 
     static void searchChar() {
-
-        // String word = "";
-        String word = "Hello";
+        String word = "";
+        // String word = "Hello";
         char letter = 'l';
         int index = new LinearSearch().searchCharInString(word, letter);
         if (index == -1) {
@@ -48,7 +50,18 @@ public class LearningDsa {
         } else {
             System.out.println("Find Character At Index " + index);
         }
+    }
 
+    static void searchCharStrArr() {
+        // String word = "";
+        String word = "Hello";
+        char letter = 'H';
+        boolean res = new LinearSearch().searchCharInStringArray(word, letter);
+        if (res) {
+            System.out.println("Find Character , result.... " + res);
+        } else {
+            System.out.println("Not Available ,  result.... " + res);
+        }
     }
 
 }

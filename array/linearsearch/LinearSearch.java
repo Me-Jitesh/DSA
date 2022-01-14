@@ -31,6 +31,8 @@ public class LinearSearch {
         return Integer.MAX_VALUE; // Here We cannot Return -1 Because it may be a value of array
     }
 
+    // Search Character In String 
+
     public int searchCharInString(String words, char letter) {
 
         for (int i = 0; i < words.length(); i++) {
@@ -42,4 +44,15 @@ public class LinearSearch {
         return -1;
     }
 
+    // Search Character In String Array
+
+    public boolean searchCharInStringArray(String words, char letter) {
+
+        for (char ch : words.toCharArray()) {
+            if (ch == letter) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
