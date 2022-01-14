@@ -30,4 +30,16 @@ public class LinearSearch {
         }
         return Integer.MAX_VALUE; // Here We cannot Return -1 Because it may be a value of array
     }
+
+    public int searchCharInString(String words, char letter) {
+
+        for (int i = 0; i < words.length(); i++) {
+
+            if (words.charAt(i) == letter) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
 }
