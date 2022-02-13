@@ -1,4 +1,4 @@
-package array.linearsearch;
+package array.linearsearch.onedim;
 
 /**
  * Time Complexity : -

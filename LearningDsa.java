@@ -1,4 +1,4 @@
-import array.linearsearch.LinearSearch;
+import array.linearsearch.onedim.LinearSearch;
 
 public class LearningDsa {
 
