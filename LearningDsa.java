@@ -14,7 +14,10 @@ public class LearningDsa {
         // searchChar();
 
         // Search Charecter In String Array
-        searchCharStrArr();
+        // searchCharStrArr();
+
+        // Find Max Value In 1-D Array ; Return Value
+        findMaxVal1d();
 
     }
 
@@ -62,6 +65,15 @@ public class LearningDsa {
         } else {
             System.out.println("Not Available ,  result.... " + res);
         }
+    }
+
+    private static void findMaxVal1d() {
+        int[] arr = { 20, 90, 50, 60, 33, 44, 34, 43, 76, 0 };
+
+        int val = new LinearSearch().findMaxVal(arr);
+
+        System.out.println("Max Value : " + val);
+
     }
 
 }
