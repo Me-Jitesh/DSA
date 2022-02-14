@@ -23,7 +23,10 @@ public class LearningDsa {
         // findMaxVal1d();
 
         // Linear search In 2-D Array ; Return Index
-        linSeaIndex2d();
+        // linSeaIndex2d();
+
+        // Find Max Value In 2-D Array ; Return Value
+        findingMaxVal2d();
 
     }
 
@@ -99,6 +102,25 @@ public class LearningDsa {
         int ans[] = new LinearSearch2d().searchInTwoDim(arr, 2);
 
         System.out.println("Find at Index : " + Arrays.toString(ans));
+    }
+
+    static void findingMaxVal2d() {
+
+        int arr[][] = {
+                {
+                        25, 552, 585, 89, 2
+                },
+                {
+                        554, 225, 2
+                },
+                {
+                        6, 8
+                }
+        };
+
+        int ans = new LinearSearch2d().findMaxVal2d(arr);
+
+        System.out.println("Maximum Value Is  : " + ans);
     }
 
 }
