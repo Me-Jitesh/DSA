@@ -1,4 +1,7 @@
+import java.util.Arrays;
+
 import array.linearsearch.onedim.LinearSearch;
+import array.linearsearch.twodim.LinearSearch2d;
 
 public class LearningDsa {
 
@@ -17,7 +20,10 @@ public class LearningDsa {
         // searchCharStrArr();
 
         // Find Max Value In 1-D Array ; Return Value
-        findMaxVal1d();
+        // findMaxVal1d();
+
+        // Linear search In 2-D Array ; Return Index
+        linSeaIndex2d();
 
     }
 
@@ -67,13 +73,32 @@ public class LearningDsa {
         }
     }
 
-    private static void findMaxVal1d() {
+    static void findMaxVal1d() {
         int[] arr = { 20, 90, 50, 60, 33, 44, 34, 43, 76, 0 };
 
         int val = new LinearSearch().findMaxVal(arr);
 
         System.out.println("Max Value : " + val);
 
+    }
+
+    static void linSeaIndex2d() {
+
+        int arr[][] = {
+                {
+                        25, 552, 585, 89, 2
+                },
+                {
+                        554, 825, 2
+                },
+                {
+                        6, 8
+                }
+        };
+
+        int ans[] = new LinearSearch2d().searchInTwoDim(arr, 2);
+
+        System.out.println("Find at Index : " + Arrays.toString(ans));
     }
 
 }
