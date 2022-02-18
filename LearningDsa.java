@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 import array.binarysearch.onedim.BinarySearch;
+import array.binarysearch.onedim.OrderAgnosticBinSearch;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
 
@@ -8,8 +9,11 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
+        // Binary Search In  Order Agnostic Array
+        binSearchAgnos();
+
         // Binary Search In 1D Array Dscending Order
-        binSearchDsc();
+        // binSearchDsc();
 
         // Binary Search In 1D Array Ascending Order
         // binSearchAsc();
@@ -35,6 +39,22 @@ public class LearningDsa {
         // Find Max Value In 2-D Array ; Return Value
         // findingMaxVal2d();
 
+    }
+
+    private static void binSearchAgnos() {
+
+        // int ascArr[] = { -5, -1, 10, 20, 30, 45, 95, 99, 102, 110 };
+        int dscArr[] = { 98, 80, 65, 52, 50, 43, 33, 19, -3, -10 };
+
+        int target = -10;
+
+        int res = new OrderAgnosticBinSearch().searchFor(dscArr, target);
+
+        if (res == -1) {
+            System.out.println("Not Found & Exited With : " + res);
+        } else {
+            System.out.println("Found at Index : " + res);
+        }
     }
 
     static void binSearchDsc() {
