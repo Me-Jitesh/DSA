@@ -1,11 +1,15 @@
 import java.util.Arrays;
 
+import array.binarysearch.onedim.BinarySearch;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
+
+        // Binary Search In 1D Array Ascending Order
+        binSearchAsc();
 
         // Linear search In 1-D Array ; Return Index
         // linSeaIndex1d();
@@ -26,8 +30,21 @@ public class LearningDsa {
         // linSeaIndex2d();
 
         // Find Max Value In 2-D Array ; Return Value
-        findingMaxVal2d();
+        // findingMaxVal2d();
 
+    }
+
+    static void binSearchAsc() {
+        int arr[] = { -5, -1, 10, 20, 30, 45, 95, 99, 102, 110 };
+        int target = 99;
+
+        int res = new BinarySearch().searchInOneDimAsc(arr, target);
+
+        if (res == -1) {
+            System.out.println("Not Found & Exited With : " + res);
+        } else {
+            System.out.println("Found at Index : " + res);
+        }
     }
 
     static void linSeaIndex1d() {
