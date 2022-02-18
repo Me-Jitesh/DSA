@@ -8,8 +8,11 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
+        // Binary Search In 1D Array Dscending Order
+        binSearchDsc();
+
         // Binary Search In 1D Array Ascending Order
-        binSearchAsc();
+        // binSearchAsc();
 
         // Linear search In 1-D Array ; Return Index
         // linSeaIndex1d();
@@ -32,6 +35,19 @@ public class LearningDsa {
         // Find Max Value In 2-D Array ; Return Value
         // findingMaxVal2d();
 
+    }
+
+    static void binSearchDsc() {
+        int arr[] = { 98, 80, 65, 52, 50, 43, 33, 19, -3, -10 };
+        int target = 33;
+
+        int res = new BinarySearch().searchInOneDimDsc(arr, target);
+
+        if (res == -1) {
+            System.out.println("Not Found & Exited With : " + res);
+        } else {
+            System.out.println("Found at Index : " + res);
+        }
     }
 
     static void binSearchAsc() {
