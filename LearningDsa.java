@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 import array.binarysearch.onedim.BinarySearch;
 import array.binarysearch.onedim.OrderAgnosticBinSearch;
+import array.binarysearch.twodim.RowColSortedMatrix;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
 
@@ -9,8 +10,11 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
-        // Binary Search In  Order Agnostic Array
-        binSearchAgnos();
+        // Search in Row and Column wise Sorted 2d Array
+        rowColSorted2d();
+
+        // Binary Search In Order Agnostic Array
+        // binSearchAgnos();
 
         // Binary Search In 1D Array Dscending Order
         // binSearchDsc();
@@ -41,7 +45,30 @@ public class LearningDsa {
 
     }
 
-    private static void binSearchAgnos() {
+    static void rowColSorted2d() {
+
+        int[][] arr = {
+                { 10, 20, 30, 40 },
+                { 15, 25, 35, 45 },
+                { 28, 29, 37, 49 },
+                { 33, 34, 38, 50 }
+
+        };
+
+        // int target = 29;
+        // int target = 229;
+        int target = 40;
+
+        int index[] = new RowColSortedMatrix().searchFor(arr, target);
+
+        if (index[0] == -1) {
+            System.out.println("Not Found and Exited With  Index : " + Arrays.toString(index));
+        } else {
+            System.out.println("Found at Index : " + Arrays.toString(index));
+        }
+    }
+
+    static void binSearchAgnos() {
 
         // int ascArr[] = { -5, -1, 10, 20, 30, 45, 95, 99, 102, 110 };
         int dscArr[] = { 98, 80, 65, 52, 50, 43, 33, 19, -3, -10 };
