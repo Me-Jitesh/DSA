@@ -3,6 +3,7 @@ import java.util.Arrays;
 import array.binarysearch.onedim.BinarySearch;
 import array.binarysearch.onedim.OrderAgnosticBinSearch;
 import array.binarysearch.twodim.RowColSortedMatrix;
+import array.binarysearch.twodim.SortedMatrix;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
 
@@ -10,8 +11,11 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
+        // Binary Search in Sorted 2d Array
+        sortedMatrixBinSearch();
+
         // Search in Row and Column wise Sorted 2d Array
-        rowColSorted2d();
+        // rowColSorted2d();
 
         // Binary Search In Order Agnostic Array
         // binSearchAgnos();
@@ -43,6 +47,27 @@ public class LearningDsa {
         // Find Max Value In 2-D Array ; Return Value
         // findingMaxVal2d();
 
+    }
+
+    static void sortedMatrixBinSearch() {
+
+        int[][] arr = {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+        };
+
+        // int target = 5;
+        // int target = 1;
+        int target = 54;
+
+        int index[] = new SortedMatrix().searchFor(arr, target);
+
+        if (index[0] == -1) {
+            System.out.println("Not Found and Exited With Index : " + Arrays.toString(index));
+        } else {
+            System.out.println("Found at Index : " + Arrays.toString(index));
+        }
     }
 
     static void rowColSorted2d() {
