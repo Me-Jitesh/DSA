@@ -1,4 +1,4 @@
-package number.charecter;
+package charecter;
 
 public class SquareShapeChar {
 

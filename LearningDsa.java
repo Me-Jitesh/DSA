@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
+import charecter.SquareShapeChar;
 import number.SquareShapeNum;
 import number.UpperTriangularShapeNum;
-import number.charecter.SquareShapeChar;
 import star.SquareShapeStar;
 import star.UpperTriangularShapeStar;
 
