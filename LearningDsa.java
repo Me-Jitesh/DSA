@@ -28,7 +28,8 @@ public class LearningDsa {
         // new UpperTriangularShapeNum().numUpTriVariation2(num);
         // new UpperTriangularShapeNum().numUpTriVariation3(num);
         // new UpperTriangularShapeNum().numUpTriVariation3Opti(num);
-        new UpperTriangularShapeNum().numUpTriVariation3Opti2(num);
+        // new UpperTriangularShapeNum().numUpTriVariation3Opti2(num);
+        new UpperTriangularShapeNum().numUpTriVariation4(num);
     }
 
     static void printStarUpTriangularShape() {
