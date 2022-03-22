@@ -37,4 +37,15 @@ public class SquareShapeNum {
             System.out.print("\n");
         }
     }
+
+    public void numVariation4(int num) {
+        int counter = 0;
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                counter = counter + 1;
+                System.out.print(" " + counter + " ");
+            }
+            System.out.print("\n");
+        }
+    }
 }
