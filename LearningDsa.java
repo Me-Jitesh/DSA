@@ -16,8 +16,9 @@ public class LearningDsa {
         int num = s.nextInt();
         s.close();
 
-        boolean res = new PrimeNumber().isPrimeNoDivisor(num);
-
+        // boolean res = new PrimeNumber().isPrimeNoDivisor(num);
+        boolean res = new PrimeNumber().isPrimeDivisorEqualNum(num);
+        
         if (res) {
             System.out.println("Given Number " + num + " Is : a Prime");
         } else {
