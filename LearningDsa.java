@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import number.SquareShapeNum;
+import number.UpperTriangularShapeNum;
 import star.SquareShapeStar;
 import star.UpperTriangularShapeStar;
 
@@ -15,7 +16,15 @@ public class LearningDsa {
         // printStarShape();
 
         // Print Triangular Star Shape
-        printStarUpTriangularShape();
+        // printStarUpTriangularShape();
+
+        // Print Triangular Star Shape
+        printNumUpTriangularShape();
+    }
+
+    private static void printNumUpTriangularShape() {
+        int num = takeInput();
+        new UpperTriangularShapeNum().numUpTriVariation1(num);
     }
 
     static void printStarUpTriangularShape() {
