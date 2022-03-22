@@ -23,4 +23,18 @@ public class UpperTriangularShapeNum {
             System.out.print("\n");
         }
     }
+
+    public void numUpTriVariation3(int num) {
+
+        for (int i = 1; i <= num; i++) {
+
+            int row = i;
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(row);
+                row = row + 1;
+            }
+            System.out.print("\n");
+        }
+    }
 }
