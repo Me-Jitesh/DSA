@@ -53,4 +53,16 @@ public class SquareShapeChar {
             System.out.print("\n");
         }
     }
+
+    public void charSqrVariation3(int num) {
+        int counter = 0;
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                char val = (char) ('A' + counter);
+                System.out.print(" " + val + " ");
+                counter++;
+            }
+            System.out.print("\n");
+        }
+    }
 }
