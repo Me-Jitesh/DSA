@@ -11,7 +11,7 @@ public class LearningDsa {
         printNumShape();
 
         // Print Star Shape
-        // printStarShape();3
+        // printStarShape();
 
     }
 
@@ -19,7 +19,7 @@ public class LearningDsa {
         int num = takeInput();
 
         // Print Square Star Shape for Given Num
-        new SquareShapeStar().starVariation1(num);
+        new SquareShapeStar().starSqrVariation1(num);
     }
 
     static void printNumShape() {
@@ -30,10 +30,10 @@ public class LearningDsa {
         // new SquareShapeNum().printNRowShape(num);
 
         // Print Square Shape for Given Num
-        // new SquareShapeNum().numVariation1(num);
-        // new SquareShapeNum().numVariation2(num);
-        // new SquareShapeNum().numVariation3(num);
-        new SquareShapeNum().numVariation4(num);
+        // new SquareShapeNum().numSqrVariation1(num);
+        // new SquareShapeNum().numSqrVariation2(num);
+        // new SquareShapeNum().numSqrVariation3(num);
+        new SquareShapeNum().numSqrVariation4(num);
     }
 
     static int takeInput() {
