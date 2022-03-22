@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-import number.NRowShape;
-import star.SquareShape;
+import number.SquareShapeNum;
+import star.SquareShapeStar;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
 
         // Print Num Shape
-        // printShape();
+        // printNumShape();
 
         // Print Star Shape
         printStarShape();
@@ -19,18 +19,18 @@ public class LearningDsa {
         int num = takeInput();
 
         // Print Square Star Shape for Given Num
-        new SquareShape().printSqrShape(num);
+        new SquareShapeStar().starVariation1(num);
     }
 
-    static void printShape() {
+    static void printNumShape() {
 
         int num = takeInput();
 
         // Print Rows for Given Num
-        // new NRowShape().printNRowShape(num);
+        // new SquareShapeNum().printNRowShape(num);
 
         // Print Square Shape for Given Num
-        new NRowShape().printNRowSqrShape(num);
+        new SquareShapeNum().numVariation1(num);
     }
 
     static int takeInput() {

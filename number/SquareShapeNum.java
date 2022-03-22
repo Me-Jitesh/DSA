@@ -1,6 +1,6 @@
 package number;
 
-public class NRowShape {
+public class SquareShapeNum {
 
     public void printNRowShape(int num) {
         for (int i = 1; i <= num; i++) {
@@ -11,7 +11,7 @@ public class NRowShape {
         }
     }
 
-    public void printNRowSqrShape(int num) {
+    public void numVariation1(int num) {
         for (int i = 1; i <= num; i++) {
             for (int j = 1; j <= num; j++) {
                 System.out.print(" " + i + " ");

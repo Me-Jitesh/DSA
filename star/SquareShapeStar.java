@@ -1,8 +1,8 @@
 package star;
 
-public class SquareShape {
+public class SquareShapeStar {
 
-    public void printSqrShape(int num) {
+    public void starVariation1(int num) {
         for (int i = 1; i <= num; i++) {
             for (int j = 1; j <= num; j++) {
                 System.out.print(" * ");
