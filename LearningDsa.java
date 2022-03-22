@@ -18,6 +18,10 @@ public class LearningDsa {
         s.close();
 
         // Print Rows for Given Num
-        new NRowShape().printNRowShape(num);
+        // new NRowShape().printNRowShape(num);
+
+        // Print Square Shape for Given Num
+        new NRowShape().printNRowSqrShape(num);
+
     }
 }
