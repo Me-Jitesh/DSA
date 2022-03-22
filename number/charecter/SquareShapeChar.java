@@ -65,4 +65,15 @@ public class SquareShapeChar {
             System.out.print("\n");
         }
     }
+
+    public void charSqrVariation3Opti(int num) {
+        char val = 'A';
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                System.out.print(" " + val + " ");
+                val++;
+            }
+            System.out.print("\n");
+        }
+    }
 }

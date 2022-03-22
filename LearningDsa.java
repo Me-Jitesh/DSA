@@ -34,7 +34,8 @@ public class LearningDsa {
         // new SquareShapeChar().charSqrVariation2(num);
         // new SquareShapeChar().charSqrVariation2Opti(num);
         // new SquareShapeChar().charSqrVariation2Opti2(num);
-        new SquareShapeChar().charSqrVariation3(num);
+        // new SquareShapeChar().charSqrVariation3(num);
+        new SquareShapeChar().charSqrVariation3Opti(num);
     }
 
     static void printNumUpTriangularShape() {
