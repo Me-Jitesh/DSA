@@ -43,4 +43,14 @@ public class SquareShapeChar {
             System.out.print("\n");
         }
     }
+
+    public void charSqrVariation2Opti2(int num) {
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                char val = (char) ('A' + j - 1);
+                System.out.print(" " + val + " ");
+            }
+            System.out.print("\n");
+        }
+    }
 }
