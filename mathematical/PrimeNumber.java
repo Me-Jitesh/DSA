@@ -36,4 +36,25 @@ public class PrimeNumber {
 
         return res;
     }
+
+    //  Higher Time Complexity in Case Of Not Prime In Comaprison to Previous Method(isPrimeDivisorEqualNum)
+    public boolean isPrimeCounter(int num) {
+
+        boolean res;
+        int counter = 0;
+
+        for (int divisor = 1; divisor <= num; divisor++) {
+            if (num % divisor == 0) {
+                counter++;
+            }
+        }
+
+        if (counter == 2) {
+            res = true;
+        } else {
+            res = false;
+        }
+
+        return res;
+    }
 }
