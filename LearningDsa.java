@@ -12,16 +12,22 @@ public class LearningDsa {
     }
 
     static void printShape() {
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter a Number : ");
-        int num = s.nextInt();
-        s.close();
+
+        int num = takeInput();
 
         // Print Rows for Given Num
         // new NRowShape().printNRowShape(num);
 
         // Print Square Shape for Given Num
         new NRowShape().printNRowSqrShape(num);
-
     }
+
+    static int takeInput() {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a Number : ");
+        int num = s.nextInt();
+        s.close();
+        return num;
+    }
+
 }
