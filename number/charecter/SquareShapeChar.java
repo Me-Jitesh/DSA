@@ -76,4 +76,14 @@ public class SquareShapeChar {
             System.out.print("\n");
         }
     }
+
+    public void charSqrVariation4(int num) {
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                char val = (char) ('A' + (i + j - 2));
+                System.out.print(" " + val + " ");
+            }
+            System.out.print("\n");
+        }
+    }
 }
