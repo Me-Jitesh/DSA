@@ -28,4 +28,13 @@ public class SquareShapeNum {
             System.out.print("\n");
         }
     }
+
+    public void numVariation3(int num) {
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                System.out.print(" " + (num - j + 1) + " ");
+            }
+            System.out.print("\n");
+        }
+    }
 }

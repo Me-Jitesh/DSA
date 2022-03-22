@@ -31,7 +31,8 @@ public class LearningDsa {
 
         // Print Square Shape for Given Num
         // new SquareShapeNum().numVariation1(num);
-        new SquareShapeNum().numVariation2(num);
+        // new SquareShapeNum().numVariation2(num);
+        new SquareShapeNum().numVariation3(num);
     }
 
     static int takeInput() {
