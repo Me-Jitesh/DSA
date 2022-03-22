@@ -2,17 +2,25 @@ import java.util.Scanner;
 
 import number.SquareShapeNum;
 import star.SquareShapeStar;
+import star.UpperTriangularShapeStar;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
 
-        // Print Num Shape
-        printNumShape();
+        // Print Square Num Shape
+        // printNumShape();
 
-        // Print Star Shape
+        // Print Square Star Shape
         // printStarShape();
 
+        // Print Triangular Star Shape
+        printStarUpTriangularShape();
+    }
+
+    static void printStarUpTriangularShape() {
+        int num = takeInput();
+        new UpperTriangularShapeStar().starUpTriVariation1(num);
     }
 
     static void printStarShape() {
