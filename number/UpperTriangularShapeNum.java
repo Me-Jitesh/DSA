@@ -37,4 +37,15 @@ public class UpperTriangularShapeNum {
             System.out.print("\n");
         }
     }
+
+    public void numUpTriVariation3Opti(int num) {
+
+        for (int i = 1; i <= num; i++) {
+
+            for (int j = 0; j < i; j++) {
+                System.out.print(i+j);
+            }
+            System.out.print("\n");
+        }
+    }
 }
