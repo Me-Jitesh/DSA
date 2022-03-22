@@ -10,7 +10,7 @@ public class LearningDsa {
     public static void main(String[] args) {
 
         // Print Square Num Shape
-        // printNumShape();
+        printNumShape();
 
         // Print Square Star Shape
         // printStarShape();
@@ -19,7 +19,7 @@ public class LearningDsa {
         // printStarUpTriangularShape();
 
         // Print Triangular Star Shape
-        printNumUpTriangularShape();
+        // printNumUpTriangularShape();
     }
 
     private static void printNumUpTriangularShape() {
@@ -55,7 +55,8 @@ public class LearningDsa {
         // new SquareShapeNum().numSqrVariation1(num);
         // new SquareShapeNum().numSqrVariation2(num);
         // new SquareShapeNum().numSqrVariation3(num);
-        new SquareShapeNum().numSqrVariation4(num);
+        // new SquareShapeNum().numSqrVariation4(num);
+        new SquareShapeNum().numSqrVariation5(num);
     }
 
     static int takeInput() {

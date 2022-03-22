@@ -48,4 +48,14 @@ public class SquareShapeNum {
             System.out.print("\n");
         }
     }
+
+    public void numSqrVariation5(int num) {
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num; j++) {
+                int val = i + j - 1;
+                System.out.print(" " + val + " ");
+            }
+            System.out.print("\n");
+        }
+    }
 }
