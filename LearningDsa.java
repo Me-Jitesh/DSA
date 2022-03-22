@@ -30,7 +30,8 @@ public class LearningDsa {
     static void printCharSquareShape() {
         int num = takeInput();
         // new SquareShapeChar().charSqrVariation1(num);
-        new SquareShapeChar().charSqrVariation1Opti(num);
+        // new SquareShapeChar().charSqrVariation1Opti(num);
+        new SquareShapeChar().charSqrVariation2(num);
     }
 
     static void printNumUpTriangularShape() {
