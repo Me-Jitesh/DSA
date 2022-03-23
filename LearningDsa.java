@@ -52,7 +52,8 @@ public class LearningDsa {
 
     static void printNumLowTriangularFlipShape() {
         int num = takeInput();
-        new LowerTriangularFlipNum().numLowTriVariation1(num);
+        // new LowerTriangularFlipNum().numLowTriVariation1(num);
+        new LowerTriangularFlipNum().numLowTriVariation2(num);
 
     }
 
