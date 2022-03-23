@@ -35,7 +35,8 @@ public class LearningDsa {
         // new UpperTriangularShapeChar().charUpTriVariation1(num);
         // new UpperTriangularShapeChar().charUpTriVariation2(num);
         // new UpperTriangularShapeChar().charUpTriVariation3(num);
-        new UpperTriangularShapeChar().charUpTriVariation4(num);
+        // new UpperTriangularShapeChar().charUpTriVariation4(num);
+        new UpperTriangularShapeChar().charUpTriVariation5(num);
 
     }
 
