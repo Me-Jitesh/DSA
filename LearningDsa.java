@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import charecter.SquareShapeChar;
 import charecter.UpperTriangularShapeChar;
+import number.LowerTriangularFlipNum;
 import number.SquareShapeNum;
 import number.UpperTriangularFlipNum;
 import number.UpperTriangularShapeNum;
@@ -43,7 +44,16 @@ public class LearningDsa {
         // printStarLowTriangularFlipShape();
 
         // Print Upper Triangle Flip Num Shape
-        printNumUpTriangularFlipShape();
+        // printNumUpTriangularFlipShape();
+
+        // Print Lower Triangle Flip Num Shape
+        printNumLowTriangularFlipShape();
+    }
+
+    static void printNumLowTriangularFlipShape() {
+        int num = takeInput();
+        new LowerTriangularFlipNum().numLowTriVariation1(num);
+
     }
 
     static void printNumUpTriangularFlipShape() {
