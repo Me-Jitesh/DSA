@@ -19,7 +19,7 @@ public class MixedSquare {
             for (int l = 1; l <= rightTriangle; l++) {
                 int val = num - row - l + 2;                    // Formula 2
                 System.out.print(val);
-                val--;
+                // val--;
             }
             System.out.print("\n");
         }
