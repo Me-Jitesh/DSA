@@ -14,4 +14,15 @@ public class UpperTriangularShapeChar {
         }
     }
 
+    public void charUpTriVariation2(int num) {
+        char val = 'A';
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" " + val + " ");
+                val++;
+            }
+            System.out.print("\n");
+        }
+    }
+
 }
