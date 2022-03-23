@@ -34,7 +34,8 @@ public class LearningDsa {
         int num = takeInput();
         // new UpperTriangularShapeChar().charUpTriVariation1(num);
         // new UpperTriangularShapeChar().charUpTriVariation2(num);
-        new UpperTriangularShapeChar().charUpTriVariation3(num);
+        // new UpperTriangularShapeChar().charUpTriVariation3(num);
+        new UpperTriangularShapeChar().charUpTriVariation4(num);
 
     }
 
