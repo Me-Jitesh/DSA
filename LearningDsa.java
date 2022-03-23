@@ -48,7 +48,8 @@ public class LearningDsa {
 
     static void printNumUpTriangularFlipShape() {
         int num = takeInput();
-        new UpperTriangularFlipNum().numUpTriFlipVariation1(num);
+        // new UpperTriangularFlipNum().numUpTriFlipVariation1(num);
+        new UpperTriangularFlipNum().numUpTriFlipVariation2(num);
     }
 
     static void printStarLowTriangularFlipShape() {
