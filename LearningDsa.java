@@ -5,6 +5,7 @@ import charecter.UpperTriangularShapeChar;
 import number.SquareShapeNum;
 import number.UpperTriangularShapeNum;
 import star.SquareShapeStar;
+import star.UpperTriangularFlipStar;
 import star.UpperTriangularShapeStar;
 
 public class LearningDsa {
@@ -24,10 +25,19 @@ public class LearningDsa {
         // printNumUpTriangularShape();
 
         // Print Square Char Shape
-        printCharSquareShape();
+        // printCharSquareShape();
 
         // Print Triangular Char Shape
         // printCharUpTriangularShape();
+
+        // Print Flip Triangle Star Shape
+        printStarUpTriangularFlipShape();
+    }
+
+    static void printStarUpTriangularFlipShape() {
+        int num = takeInput();
+        new UpperTriangularFlipStar().starUpTriFlipVariation1(num);
+
     }
 
     static void printCharUpTriangularShape() {
