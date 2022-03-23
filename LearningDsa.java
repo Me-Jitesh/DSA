@@ -24,10 +24,10 @@ public class LearningDsa {
         // printNumUpTriangularShape();
 
         // Print Square Char Shape
-        // printCharSquareShape();
+        printCharSquareShape();
 
         // Print Triangular Char Shape
-        printCharUpTriangularShape();
+        // printCharUpTriangularShape();
     }
 
     static void printCharUpTriangularShape() {
@@ -49,7 +49,8 @@ public class LearningDsa {
         // new SquareShapeChar().charSqrVariation2Opti2(num);
         // new SquareShapeChar().charSqrVariation3(num);
         // new SquareShapeChar().charSqrVariation3Opti(num);
-        new SquareShapeChar().charSqrVariation4(num);
+        // new SquareShapeChar().charSqrVariation4(num);
+        new SquareShapeChar().charSqrVariation4Opti(num);
     }
 
     static void printNumUpTriangularShape() {
