@@ -12,6 +12,7 @@ import star.SquareShapeStar;
 import star.UpperTriangularFlipStar;
 import star.UpperTriangularShapeStar;
 import various.EquilateralTriangle;
+import various.MixedSquare;
 
 public class LearningDsa {
 
@@ -51,12 +52,20 @@ public class LearningDsa {
         // printNumLowTriangularFlipShape();
 
         // Print Equilateral Triangle Shape
-        printEquiTriangleShape();
+        // printEquiTriangleShape();
+
+        // Print Mixed Element & Shape
+        printMixedElementSqrShape();
+    }
+
+    static void printMixedElementSqrShape() {
+        int num = takeInput();
+        new MixedSquare().mixedElmVariation1(num);
     }
 
     static void printEquiTriangleShape() {
         int num = takeInput();
-        new EquilateralTriangle().EquiTriangleVariation1(num);
+        new EquilateralTriangle().equiTriangleVariation1(num);
     }
 
     static void printNumLowTriangularFlipShape() {

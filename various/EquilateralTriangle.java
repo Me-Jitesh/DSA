@@ -2,7 +2,7 @@ package various;
 
 public class EquilateralTriangle {
 
-    public void EquiTriangleVariation1(int num) {
+    public void equiTriangleVariation1(int num) {
         for (int row = 1; row <= num; row++) {
 
             int space = num - row;
