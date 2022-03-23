@@ -25,4 +25,15 @@ public class UpperTriangularShapeChar {
         }
     }
 
+    public void charUpTriVariation3(int num) {
+        for (int i = 1; i <= num; i++) {
+            char val = 'A';
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" " + val + " ");
+                val++;
+            }
+            System.out.print("\n");
+        }
+    }
+
 }
