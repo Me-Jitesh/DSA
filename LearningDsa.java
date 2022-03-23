@@ -11,6 +11,7 @@ import star.LowerTriangularStar;
 import star.SquareShapeStar;
 import star.UpperTriangularFlipStar;
 import star.UpperTriangularShapeStar;
+import various.EquilateralTriangle;
 
 public class LearningDsa {
 
@@ -47,7 +48,15 @@ public class LearningDsa {
         // printNumUpTriangularFlipShape();
 
         // Print Lower Triangle Flip Num Shape
-        printNumLowTriangularFlipShape();
+        // printNumLowTriangularFlipShape();
+
+        // Print Equilateral Triangle Shape
+        printEquiTriangleShape();
+    }
+
+    static void printEquiTriangleShape() {
+        int num = takeInput();
+        new EquilateralTriangle().EquiTriangleVariation1(num);
     }
 
     static void printNumLowTriangularFlipShape() {
