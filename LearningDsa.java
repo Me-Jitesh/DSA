@@ -10,8 +10,9 @@ public class LearningDsa {
 
         // Complement is always -(num+1) for positive int And +(num-1) for negative And
         // 0 always -1
-        new Fundamental().operationFor(121, -121);
+        // new Fundamental().operationFor(121, -121);
 
-        
+        new Fundamental().leftShift(100, 3); // large number left shift can be convert into negative
+
     }
 }

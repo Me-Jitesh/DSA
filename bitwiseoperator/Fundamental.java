@@ -9,4 +9,8 @@ public class Fundamental {
         System.out.println("Bitwise complement Operation result for " + num1 + " is : " + (~num1));
         System.out.println("Bitwise complement Operation result for " + num2 + " is : " + (~num2));
     }
+
+    public void leftShift(int num1, int num2) {
+        System.out.println("Bitwise left shift Operation result for " + num1 + "<<" + num2 + " is : " + (num1 << num2));
+    }
 }
