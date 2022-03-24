@@ -12,7 +12,9 @@ public class LearningDsa {
         // 0 always -1
         // new Fundamental().operationFor(121, -121);
 
-        new Fundamental().leftShift(100, 3); // large number left shift can be convert into negative
+        // large number left shift can be convert into negative
+        // result for small number num1*2^num2
+        new Fundamental().leftShift(100, 5);
 
     }
 }
