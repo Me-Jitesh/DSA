@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import bitmanipulation.Leetcode191;
 import digits.Leetcode1281;
 
 public class LearningDsa {
@@ -7,7 +8,13 @@ public class LearningDsa {
     public static void main(String[] args) {
         int num = takeInput();
 
-        printLc1281(num);
+        // printLc1281(num);
+
+        printLc191(num);
+    }
+
+    static void printLc191(int num) {
+        new Leetcode191().numberOfOneBits(num);
     }
 
     static void printLc1281(int num) {
