@@ -11,11 +11,7 @@ public class LearningDsa {
     }
 
     static void primeCheck() {
-        Scanner s = new Scanner(System.in);
-        System.out.print("Please Enter a Number : ");
-        int num = s.nextInt();
-        s.close();
-
+        int num = takeInput();
         // boolean res = new PrimeNumber().isPrimeNoDivisor(num);
         // boolean res = new PrimeNumber().isPrimeDivisorEqualNum(num);
         boolean res = new PrimeNumber().isPrimeCounter(num);
@@ -26,4 +22,13 @@ public class LearningDsa {
             System.err.println("Given Number " + num + " Is : Not a Prime");
         }
     }
+
+    static int takeInput() {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Please Enter a Number : ");
+        int num = s.nextInt();
+        s.close();
+        return num;
+    }
+
 }
