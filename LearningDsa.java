@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import mathematical.FibonacciNumber;
 import mathematical.PrimeNumber;
+import mathematical.SumOfN;
 
 public class LearningDsa {
 
@@ -11,7 +12,15 @@ public class LearningDsa {
         // printPrimeCheck();
 
         // Find Fibonocci
-        printFibNum();
+        // printFibNum();
+
+        // Sum From 1 to n
+        printSumOfN();
+    }
+
+    private static void printSumOfN() {
+        int num = takeInput();
+        new SumOfN().sumOfNMetod1(num);
     }
 
     static void printFibNum() {
