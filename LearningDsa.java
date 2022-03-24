@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import mathematical.FibonacciNumber;
 import mathematical.PrimeNumber;
 
 public class LearningDsa {
@@ -7,10 +8,18 @@ public class LearningDsa {
     public static void main(String[] args) {
 
         // Given Number is Prime or not
-        primeCheck();
+        // printPrimeCheck();
+
+        // Find Fibonocci
+        printFibNum();
     }
 
-    static void primeCheck() {
+    static void printFibNum() {
+        int num = takeInput();
+        new FibonacciNumber().fibNumMethod1(num);
+    }
+
+    static void printPrimeCheck() {
         int num = takeInput();
         // boolean res = new PrimeNumber().isPrimeNoDivisor(num);
         // boolean res = new PrimeNumber().isPrimeDivisorEqualNum(num);
