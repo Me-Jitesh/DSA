@@ -1,6 +1,17 @@
+import bitwiseoperator.Fundamental;
+
 public class LearningDsa {
 
     public static void main(String[] args) {
-        System.out.println(" Basic BoilerPlate Code");
+        // 2 same number always give itself for and,or whereas 0 for xor
+        // new Fundamental().operationFor(7, 7);
+
+        // new Fundamental().operationFor(121, 111);
+
+        // Complement is always -(num+1) for positive int And +(num-1) for negative And
+        // 0 always -1
+        new Fundamental().operationFor(121, -121);
+
+        
     }
 }
