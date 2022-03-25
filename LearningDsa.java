@@ -8,28 +8,27 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
+        int num = takeInput();
         // Given Number is Prime or not
-        // printPrimeCheck();
+        // printPrimeCheck(num);
 
         // Find Fibonocci
-        // printFibNum();
+        // printFibNum(num);
 
         // Sum From 1 to n
-        printSumOfN();
+        printSumOfN(num);
+
     }
 
-    private static void printSumOfN() {
-        int num = takeInput();
+    static void printSumOfN(int num) {
         new SumOfN().sumOfNMetod1(num);
     }
 
-    static void printFibNum() {
-        int num = takeInput();
+    static void printFibNum(int num) {
         new FibonacciNumber().fibNumMethod1(num);
     }
 
-    static void printPrimeCheck() {
-        int num = takeInput();
+    static void printPrimeCheck(int num) {
         // boolean res = new PrimeNumber().isPrimeNoDivisor(num);
         // boolean res = new PrimeNumber().isPrimeDivisorEqualNum(num);
         boolean res = new PrimeNumber().isPrimeCounter(num);
