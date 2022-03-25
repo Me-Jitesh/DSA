@@ -3,6 +3,7 @@ import java.util.Scanner;
 import mathematical.FibonacciNumber;
 import mathematical.PrimeNumber;
 import mathematical.SumOfN;
+import numbersystem.BinaryToDecimalConversion;
 import numbersystem.DecimalToBinaryConversion;
 
 public class LearningDsa {
@@ -20,8 +21,15 @@ public class LearningDsa {
         // printSumOfN(num);
 
         // Converting Decimal into Binary
-        printDecToBin(num);
+        // printDecToBin(num);
 
+        // Converting Binary into Decimal
+        printBinToDec(num);
+
+    }
+
+    static void printBinToDec(int num) {
+        new BinaryToDecimalConversion().binaryToDecimalMethod1(num);
     }
 
     static void printDecToBin(int num) {
