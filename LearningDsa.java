@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import bitmanipulation.Leetcode1009;
 import bitmanipulation.Leetcode191;
 import digits.Leetcode1281;
 import digits.Leetcode7;
@@ -13,7 +14,15 @@ public class LearningDsa {
 
         // printLc191(num);
 
-        printLc7(num);
+        // printLc7(num);
+
+        printLc1009(num);
+
+    }
+
+    static void printLc1009(int num) {
+        int res = new Leetcode1009().ComplementBase10Integer(num);
+        System.out.println("Complement of Given Integer : " + res);
     }
 
     static void printLc7(int num) {
