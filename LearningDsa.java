@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import bitmanipulation.Leetcode191;
 import digits.Leetcode1281;
+import digits.Leetcode7;
 
 public class LearningDsa {
 
@@ -10,7 +11,19 @@ public class LearningDsa {
 
         // printLc1281(num);
 
-        printLc191(num);
+        // printLc191(num);
+
+        printLc7(num);
+    }
+
+    static void printLc7(int num) {
+        int res = new Leetcode7().reverseInteger(num);
+
+        if (res == 0) {
+            System.out.println("Answer is Out Of Integer Range !! ");
+        } else {
+            System.out.println("Reverse of given no is : " + res);
+        }
     }
 
     static void printLc191(int num) {
