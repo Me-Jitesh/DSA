@@ -24,7 +24,8 @@ public class LearningDsa {
     }
 
     static void printLc231(int num) {
-        boolean res = new Leetcode231().powerOf2(num);
+        // boolean res = new Leetcode231().powerOf2(num);
+        boolean res = new Leetcode231().powerOf2Opti(num);
         if (res) {
             System.out.println("Yes ! It Is Power Of 2 ");
         } else {
