@@ -20,8 +20,15 @@ public class LearningDsa {
         // printSumOfN(num);
 
         // Converting Decimal into Binary
-        printDecToBin(num);
+        // printDecToBin(num);
 
+        // Converting Negative Decimal into Binary
+        printDecToBinNeg(num);
+
+    }
+
+    static void printDecToBinNeg(int num) {
+        new DecimalToBinaryConversion().decimalToBinaryNegativeNumMethod1(num);
     }
 
     static void printDecToBin(int num) {
