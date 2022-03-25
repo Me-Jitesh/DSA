@@ -4,6 +4,7 @@ import bitmanipulation.Leetcode1009;
 import bitmanipulation.Leetcode191;
 import digits.Leetcode1281;
 import digits.Leetcode7;
+import maths.Leetcode231;
 
 public class LearningDsa {
 
@@ -16,8 +17,19 @@ public class LearningDsa {
 
         // printLc7(num);
 
-        printLc1009(num);
+        // printLc1009(num);
 
+        printLc231(num);
+
+    }
+
+    static void printLc231(int num) {
+        boolean res = new Leetcode231().powerOf2(num);
+        if (res) {
+            System.out.println("Yes ! It Is Power Of 2 ");
+        } else {
+            System.out.println("Nope ! It Is Not Power Of 2 ");
+        }
     }
 
     static void printLc1009(int num) {
