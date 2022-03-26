@@ -7,6 +7,7 @@ import array.binarysearch.twodim.SortedMatrix;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
 import array.operation.FindDuplicate;
+import array.operation.FindIntersection;
 import array.operation.FindUnique;
 import array.operation.ReverseArray;
 import array.operation.SwapAlternate;
@@ -60,8 +61,16 @@ public class LearningDsa {
         // Find Unique
         // printFindUnique();
 
-        prinFindDuplicate();
+        // prinFindDuplicate();
 
+        prinFindIntersection();
+
+    }
+
+    static void prinFindIntersection() {
+        int[] arr1 = { 1, 4, 5 };
+        int[] arr2 = { 3, 4, 5 };
+        new FindIntersection().findIntersectionMethod1(arr1, arr2);
     }
 
     static void prinFindDuplicate() {
