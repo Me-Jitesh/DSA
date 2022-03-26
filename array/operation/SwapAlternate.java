@@ -6,7 +6,7 @@ public class SwapAlternate {
 
     public void swapAlternateMethod1(int[] arr) {
 
-        for (int i = 0; i < arr.length - 1; i += 2) {
+        for (int i = 0; i < arr.length; i += 2) {
             if (i < (arr.length - 1)) {
                 arr = swap(arr, i, i + 1);
             }
