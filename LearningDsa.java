@@ -6,13 +6,14 @@ import array.binarysearch.twodim.RowColSortedMatrix;
 import array.binarysearch.twodim.SortedMatrix;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
+import array.operation.ReverseArray;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
 
         // Binary Search in Sorted 2d Array
-        sortedMatrixBinSearch();
+        // sortedMatrixBinSearch();
 
         // Search in Row and Column wise Sorted 2d Array
         // rowColSorted2d();
@@ -47,6 +48,15 @@ public class LearningDsa {
         // Find Max Value In 2-D Array ; Return Value
         // findingMaxVal2d();
 
+        // Reverse the array
+        printReverseArray();
+
+    }
+
+    static void printReverseArray() {
+        // int[] arr = { 1, 2, 3, 7, 8, 9 };
+        int[] arr = { 1, 2, 3, 7, 8, 9, 10 };
+        new ReverseArray().reverseArrayMethod1(arr);
     }
 
     static void sortedMatrixBinSearch() {
