@@ -7,6 +7,7 @@ import array.binarysearch.twodim.SortedMatrix;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
 import array.operation.ReverseArray;
+import array.operation.SwapAlternate;
 
 public class LearningDsa {
 
@@ -49,8 +50,18 @@ public class LearningDsa {
         // findingMaxVal2d();
 
         // Reverse the array
-        printReverseArray();
+        // printReverseArray();
 
+        // Swap alternate
+        printSwapAlternate();
+
+    }
+
+    static void printSwapAlternate() {
+        int[] arr = { 1, 2, 3, 7, 8, 9 };
+        // int[] arr = { 1, 2, 3, 7, 8, 9, 10 };
+
+        new SwapAlternate().swapAlternateMethod1(arr);
     }
 
     static void printReverseArray() {
