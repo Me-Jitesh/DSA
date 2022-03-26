@@ -6,6 +6,7 @@ import array.binarysearch.twodim.RowColSortedMatrix;
 import array.binarysearch.twodim.SortedMatrix;
 import array.linearsearch.onedim.LinearSearch;
 import array.linearsearch.twodim.LinearSearch2d;
+import array.operation.FindDuplicate;
 import array.operation.FindUnique;
 import array.operation.ReverseArray;
 import array.operation.SwapAlternate;
@@ -57,8 +58,15 @@ public class LearningDsa {
         // printSwapAlternate();
 
         // Find Unique
-        printFindUnique();
+        // printFindUnique();
 
+        prinFindDuplicate();
+
+    }
+
+    static void prinFindDuplicate() {
+        int[] arr = { 1, 2, 5, 4, 7, 3, 8, 6, 9, 4 };
+        new FindDuplicate().findDuplicateMethod1(arr);
     }
 
     static void printFindUnique() {
