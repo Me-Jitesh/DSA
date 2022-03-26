@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import mathematical.FibonacciNumber;
 import mathematical.FindPower;
+import mathematical.FindnCr;
 import mathematical.PrimeNumber;
 import mathematical.SumOfN;
 import numbersystem.BinaryToDecimalConversion;
@@ -27,8 +28,17 @@ public class LearningDsa {
         // Converting Binary into Decimal
         // printBinToDec(num);
 
-        printFindPow();
+        // printFindPow();
 
+        prinFindnCr();
+
+    }
+
+    static void prinFindnCr() {
+        int n = 13;
+        int r = 0;
+
+        new FindnCr().nCrMethod1(n, r);
     }
 
     static void printFindPow() {
