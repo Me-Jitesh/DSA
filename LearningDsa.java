@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import mathematical.FibonacciNumber;
+import mathematical.FindPower;
 import mathematical.PrimeNumber;
 import mathematical.SumOfN;
 import numbersystem.BinaryToDecimalConversion;
@@ -10,7 +11,7 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
-        int num = takeInput();
+        // int num = takeInput();
         // Given Number is Prime or not
         // printPrimeCheck(num);
 
@@ -24,8 +25,17 @@ public class LearningDsa {
         // printDecToBin(num);
 
         // Converting Binary into Decimal
-        printBinToDec(num);
+        // printBinToDec(num);
 
+        printFindPow();
+
+    }
+
+    static void printFindPow() {
+        int base = 2;
+        int expo = 8;
+
+        new FindPower().findPowerMetod1(base, expo);
     }
 
     static void printBinToDec(int num) {
