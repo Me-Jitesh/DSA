@@ -9,6 +9,7 @@ import array.linearsearch.twodim.LinearSearch2d;
 import array.operation.FindDuplicate;
 import array.operation.FindIntersection;
 import array.operation.FindUnique;
+import array.operation.PairSum;
 import array.operation.ReverseArray;
 import array.operation.SwapAlternate;
 
@@ -63,7 +64,17 @@ public class LearningDsa {
 
         // prinFindDuplicate();
 
-        prinFindIntersection();
+        // prinFindIntersection();
+
+        printPairSum();
+
+    }
+
+    static void printPairSum() {
+        int[] arr = { 1, 4, 5, 3, 2, 6 };
+        // int sum = 5;
+        int sum = 6;
+        new PairSum().pairSumMethod1(arr, sum);
 
     }
 
