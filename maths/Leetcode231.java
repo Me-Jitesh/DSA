@@ -30,4 +30,22 @@ public class Leetcode231 {
         return false;
     }
 
+    public boolean powerOf2Opti2(int num) {
+
+        int setBits = 0;
+
+        while (num != 0) {
+            int bit = num & 1;
+            if (bit == 1) {
+                setBits++;
+            }
+            num = num >> 1;
+        }
+
+        if (setBits == 1) {
+            return true;
+        }
+        return false;
+    }
+
 }
