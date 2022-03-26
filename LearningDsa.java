@@ -1,4 +1,5 @@
 import bitwiseoperator.Fundamental;
+import usecase.FindEvenOdd;
 
 public class LearningDsa {
 
@@ -17,7 +18,9 @@ public class LearningDsa {
         // new Fundamental().leftShift(100, 5);
 
         // result num1 / 2^num2
-        new Fundamental().rigtShift(200, 6);
+        // new Fundamental().rigtShift(200, 6);
+
+        new FindEvenOdd().findEvenOddFor(151);
 
     }
 }
