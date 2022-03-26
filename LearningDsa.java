@@ -11,6 +11,7 @@ import array.operation.FindIntersection;
 import array.operation.FindUnique;
 import array.operation.PairSum;
 import array.operation.ReverseArray;
+import array.operation.SortZeroOnes;
 import array.operation.SwapAlternate;
 
 public class LearningDsa {
@@ -66,8 +67,16 @@ public class LearningDsa {
 
         // prinFindIntersection();
 
-        printPairSum();
+        // printPairSum();
 
+        printSortZeroOnes();
+
+    }
+
+    static void printSortZeroOnes() {
+        int[] arr = { 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0 };
+
+        new SortZeroOnes().sortZeroOnesMethod1(arr);
     }
 
     static void printPairSum() {
