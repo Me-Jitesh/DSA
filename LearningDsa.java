@@ -70,7 +70,8 @@ public class LearningDsa {
     static void prinFindIntersection() {
         int[] arr1 = { 1, 4, 5 };
         int[] arr2 = { 3, 4, 5 };
-        new FindIntersection().findIntersectionMethod1(arr1, arr2);
+        // new FindIntersection().findIntersectionMethod1(arr1, arr2);
+        new FindIntersection().findIntersectionMethod1Opti(arr1, arr2);
     }
 
     static void prinFindDuplicate() {
