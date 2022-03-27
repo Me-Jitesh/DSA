@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 import array.binarysearch.onedim.BinarySearch;
+import array.binarysearch.onedim.BookAllocation;
 import array.binarysearch.onedim.FindPivot;
 import array.binarysearch.onedim.FirstAndLastPositionOfElem;
 import array.binarysearch.onedim.OrderAgnosticBinSearch;
@@ -78,8 +79,16 @@ public class LearningDsa {
 
         // printFindPivot();
 
-        printSearchInRotatedSortedArray();
+        // printSearchInRotatedSortedArray();
+        printBookAllocation();
 
+    }
+
+    static void printBookAllocation() {
+        int[] arr = { 12, 34, 67, 90 };
+        int students = 2;
+
+        new BookAllocation().bookAllocationMethod1(arr, students);
     }
 
     static void printSearchInRotatedSortedArray() {
