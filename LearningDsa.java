@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+import array.binarysearch.onedim.AggressiveCows;
 import array.binarysearch.onedim.BinarySearch;
 import array.binarysearch.onedim.BookAllocation;
 import array.binarysearch.onedim.FindPivot;
@@ -84,8 +85,18 @@ public class LearningDsa {
 
         // printBookAllocation();
 
-        printPaintersPartitionProblem();
+        // printPaintersPartitionProblem();
 
+        printAggressiveCows();
+
+    }
+
+    static void printAggressiveCows() {
+        // int[] stalls = { 4, 2, 1, 3, 6 };
+        int[] stalls = { 1, 2, 3 };
+        int cows = 2;
+
+        new AggressiveCows().aggressiveCowsMethod1(stalls, cows);
     }
 
     static void printPaintersPartitionProblem() {
