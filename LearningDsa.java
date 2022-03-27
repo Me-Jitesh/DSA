@@ -4,6 +4,7 @@ import array.binarysearch.onedim.BinarySearch;
 import array.binarysearch.onedim.FindPivot;
 import array.binarysearch.onedim.FirstAndLastPositionOfElem;
 import array.binarysearch.onedim.OrderAgnosticBinSearch;
+import array.binarysearch.onedim.SearchInRotatedSortedArray;
 import array.binarysearch.twodim.RowColSortedMatrix;
 import array.binarysearch.twodim.SortedMatrix;
 import array.linearsearch.onedim.LinearSearch;
@@ -75,8 +76,18 @@ public class LearningDsa {
 
         // printFirstAndLastPositionOfElem();
 
-        printFindPivot();
+        // printFindPivot();
 
+        printSearchInRotatedSortedArray();
+
+    }
+
+    static void printSearchInRotatedSortedArray() {
+        int[] arr = { 8, 10, 17, 1, 3 };
+
+        int target = 17;
+        // int target = 89;
+        new SearchInRotatedSortedArray().SearchInRotatedSortedArrayMethed1(arr, target);
     }
 
     static void printFindPivot() {
