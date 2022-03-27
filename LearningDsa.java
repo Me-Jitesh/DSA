@@ -5,6 +5,7 @@ import array.binarysearch.onedim.BookAllocation;
 import array.binarysearch.onedim.FindPivot;
 import array.binarysearch.onedim.FirstAndLastPositionOfElem;
 import array.binarysearch.onedim.OrderAgnosticBinSearch;
+import array.binarysearch.onedim.PaintersPartitionProblem;
 import array.binarysearch.onedim.SearchInRotatedSortedArray;
 import array.binarysearch.twodim.RowColSortedMatrix;
 import array.binarysearch.twodim.SortedMatrix;
@@ -80,8 +81,18 @@ public class LearningDsa {
         // printFindPivot();
 
         // printSearchInRotatedSortedArray();
-        printBookAllocation();
 
+        // printBookAllocation();
+
+        printPaintersPartitionProblem();
+
+    }
+
+    static void printPaintersPartitionProblem() {
+        int[] arr = { 5, 5, 5, 5 };
+        int painters = 2;
+
+        new PaintersPartitionProblem().paintersPartitionProblemMethod1(arr, painters);
     }
 
     static void printBookAllocation() {
