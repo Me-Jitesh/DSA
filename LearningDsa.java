@@ -6,6 +6,7 @@ import bitmanipulation.Leetcode191;
 import digits.Leetcode1281;
 import digits.Leetcode7;
 import maths.Leetcode231;
+import maths.Leetcode69;
 
 public class LearningDsa {
 
@@ -22,8 +23,13 @@ public class LearningDsa {
 
         // printLc231(num);
 
-        printLc852();
+        // printLc852();
 
+        printLc69();
+    }
+
+    static void printLc69() {
+        new Leetcode69().sqrt(36);
     }
 
     static void printLc852() {
