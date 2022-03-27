@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 import array.binarysearch.onedim.BinarySearch;
+import array.binarysearch.onedim.FirstAndLastPositionOfElem;
 import array.binarysearch.onedim.OrderAgnosticBinSearch;
 import array.binarysearch.twodim.RowColSortedMatrix;
 import array.binarysearch.twodim.SortedMatrix;
@@ -69,8 +70,19 @@ public class LearningDsa {
 
         // printPairSum();
 
-        printSortZeroOnes();
+        // printSortZeroOnes();
 
+        printFirstAndLastPositionOfElem();
+
+    }
+
+    static void printFirstAndLastPositionOfElem() {
+        int[] arr = { 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 7, 8, 9, 9, 9 };
+        // int target = 4;
+        // int target = 3;
+        int target = 9;
+
+        new FirstAndLastPositionOfElem().firstAndLastPositionOfElemMetheod1(arr, target);
     }
 
     static void printSortZeroOnes() {
