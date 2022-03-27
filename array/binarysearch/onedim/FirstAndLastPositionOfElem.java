@@ -8,6 +8,9 @@ public class FirstAndLastPositionOfElem {
         System.out.println("First Occurence of Given Num is : " + firstOccurence(arr, target));
         System.out.println("Last Occurence of Given Num is : " + lastOccurence(arr, target));
 
+        int total = lastOccurence(arr, target) - firstOccurence(arr, target) + 1;
+        System.out.println("Total Number of Occurence : " + total);
+
     }
 
     public int firstOccurence(int[] arr, int target) {

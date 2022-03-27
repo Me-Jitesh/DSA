@@ -79,8 +79,8 @@ public class LearningDsa {
     static void printFirstAndLastPositionOfElem() {
         int[] arr = { 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 7, 8, 9, 9, 9 };
         // int target = 4;
-        // int target = 3;
-        int target = 9;
+        int target = 3;
+        // int target = 9;
 
         new FirstAndLastPositionOfElem().firstAndLastPositionOfElemMetheod1(arr, target);
     }
