@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import array.Leetcode852;
 import bitmanipulation.Leetcode1009;
 import bitmanipulation.Leetcode191;
 import digits.Leetcode1281;
@@ -9,7 +10,7 @@ import maths.Leetcode231;
 public class LearningDsa {
 
     public static void main(String[] args) {
-        int num = takeInput();
+        // int num = takeInput();
 
         // printLc1281(num);
 
@@ -19,8 +20,15 @@ public class LearningDsa {
 
         // printLc1009(num);
 
-        printLc231(num);
+        // printLc231(num);
 
+        printLc852();
+
+    }
+
+    static void printLc852() {
+        int[] arr = { 24, 69, 100, 109, 19, 178, 67, 36, 24, 19 };
+        new Leetcode852().peekIndexInMountainArray(arr);
     }
 
     static void printLc231(int num) {
