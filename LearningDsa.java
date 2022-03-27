@@ -29,7 +29,8 @@ public class LearningDsa {
     }
 
     static void printLc69() {
-        new Leetcode69().sqrt(36);
+        // new Leetcode69().sqrt(36);
+        new Leetcode69().sqrtMorePrecision(37, 2);
     }
 
     static void printLc852() {
