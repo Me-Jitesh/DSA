@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 import array.binarysearch.onedim.BinarySearch;
+import array.binarysearch.onedim.FindPivot;
 import array.binarysearch.onedim.FirstAndLastPositionOfElem;
 import array.binarysearch.onedim.OrderAgnosticBinSearch;
 import array.binarysearch.twodim.RowColSortedMatrix;
@@ -72,8 +73,15 @@ public class LearningDsa {
 
         // printSortZeroOnes();
 
-        printFirstAndLastPositionOfElem();
+        // printFirstAndLastPositionOfElem();
 
+        printFindPivot();
+
+    }
+
+    static void printFindPivot() {
+        int[] arr = { 3, 8, 10, 17, 1 };
+        new FindPivot().findPivotMethod1(arr);
     }
 
     static void printFirstAndLastPositionOfElem() {
