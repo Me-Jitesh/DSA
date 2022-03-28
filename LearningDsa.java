@@ -17,6 +17,7 @@ import array.operation.FindIntersection;
 import array.operation.FindUnique;
 import array.operation.PairSum;
 import array.operation.ReverseArray;
+import array.operation.ReverseArrayFromGivenIndex;
 import array.operation.SortZeroOnes;
 import array.operation.SwapAlternate;
 import array.sorting.bubblesort.BubbleSortInc;
@@ -96,8 +97,17 @@ public class LearningDsa {
 
         // printBubbleSortInc();
 
-        printInsertionSortInc();
+        // printInsertionSortInc();
 
+        printReverseArrayFromGivenIndex();
+
+    }
+
+    static void printReverseArrayFromGivenIndex() {
+        int[] arr = { 1, 2, 3, 6, 2, 4, 3, 78, 99, 12 };
+        int index = 3;
+
+        new ReverseArrayFromGivenIndex().reverseArrayFromGivenIndexMethod1(arr, index);
     }
 
     static void printInsertionSortInc() {
