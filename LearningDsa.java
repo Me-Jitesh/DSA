@@ -19,6 +19,7 @@ import array.operation.PairSum;
 import array.operation.ReverseArray;
 import array.operation.SortZeroOnes;
 import array.operation.SwapAlternate;
+import array.sorting.bubblesort.BubbleSortInc;
 import array.sorting.selectionsort.SelectionSortInc;
 
 public class LearningDsa {
@@ -90,8 +91,15 @@ public class LearningDsa {
 
         // printAggressiveCows();
 
-        printSelectionSortInc();
+        // printSelectionSortInc();
 
+        printBubbleSortInc();
+
+    }
+
+    static void printBubbleSortInc() {
+        int[] arr = { 4, 2, 1, 3, 6, 8, 9, 9, 23, 45 };
+        new BubbleSortInc().bubbleSortIncMethod1(arr);
     }
 
     static void printSelectionSortInc() {
