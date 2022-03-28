@@ -15,6 +15,7 @@ import array.linearsearch.twodim.LinearSearch2d;
 import array.operation.FindDuplicate;
 import array.operation.FindIntersection;
 import array.operation.FindUnique;
+import array.operation.Merge2SortedArray;
 import array.operation.PairSum;
 import array.operation.ReverseArray;
 import array.operation.ReverseArrayFromGivenIndex;
@@ -99,8 +100,16 @@ public class LearningDsa {
 
         // printInsertionSortInc();
 
-        printReverseArrayFromGivenIndex();
+        // printReverseArrayFromGivenIndex();
 
+        printMerge2SortedArray();
+
+    }
+
+    static void printMerge2SortedArray() {
+        int[] arr1 = { 1, 5, 6, 7, 8, 11, 22, 32 };
+        int[] arr2 = { 2, 4, 15, 25, 44 };
+        new Merge2SortedArray().merge2SortedArrayMethod1(arr1, arr2);
     }
 
     static void printReverseArrayFromGivenIndex() {
