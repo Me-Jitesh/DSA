@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import array.Leetcode283;
 import array.Leetcode852;
 import bitmanipulation.Leetcode1009;
 import bitmanipulation.Leetcode191;
@@ -25,7 +26,15 @@ public class LearningDsa {
 
         // printLc852();
 
-        printLc69();
+        // printLc69();
+
+        printLc283();
+
+    }
+
+    static void printLc283() {
+        int[] arr = { 0, 1, 0, 0, 2, 1, 4, 5, 0, 8, 0, 7, 9, 0, 0, 34, 45, 0, 9 };
+        new Leetcode283().moveZeroes(arr);
     }
 
     static void printLc69() {
