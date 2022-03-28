@@ -98,8 +98,11 @@ public class LearningDsa {
     }
 
     static void printBubbleSortInc() {
-        int[] arr = { 4, 2, 1, 3, 6, 8, 9, 9, 23, 45 };
-        new BubbleSortInc().bubbleSortIncMethod1(arr);
+        // int[] arr = { 4, 2, 1, 3, 6, 8, 9, 9, 23, 45 };
+        int[] arr = { 4, 2, 1, 3, 55, 6, 8, 9, 9, 23, 45, 6 };
+
+        // new BubbleSortInc().bubbleSortIncMethod1(arr);
+        new BubbleSortInc().bubbleSortIncMethod1Opti(arr);
     }
 
     static void printSelectionSortInc() {
