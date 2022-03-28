@@ -19,6 +19,7 @@ import array.operation.PairSum;
 import array.operation.ReverseArray;
 import array.operation.SortZeroOnes;
 import array.operation.SwapAlternate;
+import array.sorting.selectionsort.SelectionSortInc;
 
 public class LearningDsa {
 
@@ -87,8 +88,15 @@ public class LearningDsa {
 
         // printPaintersPartitionProblem();
 
-        printAggressiveCows();
+        // printAggressiveCows();
 
+        printSelectionSortInc();
+
+    }
+
+    static void printSelectionSortInc() {
+        int[] arr = { 4, 2, 1, 3, 6 };
+        new SelectionSortInc().selectionSortIncMethod1(arr);
     }
 
     static void printAggressiveCows() {
