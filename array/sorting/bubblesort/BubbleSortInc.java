@@ -19,11 +19,13 @@ public class BubbleSortInc {
 
     public void bubbleSortIncMethod1Opti(int[] arr) {
 
-        for (int i = 0; i < arr.length - 1; i++) {
+        // for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 1; i < arr.length; i++) {
 
-            for (int j = 0; j < (arr.length - i - 1); j++) {
+            // for (int j = 0; j < (arr.length - i - 1); j++) {
+            for (int j = 0; j < (arr.length - i); j++) {
 
-                System.out.print(j); // For Debugging purpose only
+                // System.out.print(j); // For Debugging purpose only
 
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
