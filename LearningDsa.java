@@ -20,6 +20,7 @@ import array.operation.ReverseArray;
 import array.operation.SortZeroOnes;
 import array.operation.SwapAlternate;
 import array.sorting.bubblesort.BubbleSortInc;
+import array.sorting.insertionsort.InsertionSortInc;
 import array.sorting.selectionsort.SelectionSortInc;
 
 public class LearningDsa {
@@ -93,15 +94,22 @@ public class LearningDsa {
 
         // printSelectionSortInc();
 
-        printBubbleSortInc();
+        // printBubbleSortInc();
 
+        printInsertionSortInc();
+
+    }
+
+    static void printInsertionSortInc() {
+        int[] arr = { 1, 2, 3, 6, 2, 4, 3, 78, 99, 12 };
+        new InsertionSortInc().insertionSortIncMethod1(arr);
     }
 
     static void printBubbleSortInc() {
         // int[] arr = { 4, 2, 1, 3, 6, 8, 9, 9, 23, 45 };
         // int[] arr = { 4, 2, 1, 3, 55, 6, 8, 9, 9, 23, 45, 6 };
         // int[] arr = { 1, 2, 3, 6, };
-        int[] arr = { 1, 2, 3, 6,2,4 };
+        int[] arr = { 1, 2, 3, 6, 2, 4 };
 
         // new BubbleSortInc().bubbleSortIncMethod1(arr);
         // new BubbleSortInc().bubbleSortIncMethod1Opti(arr);
