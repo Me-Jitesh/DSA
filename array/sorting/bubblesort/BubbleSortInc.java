@@ -35,6 +35,27 @@ public class BubbleSortInc {
         System.out.println("Sorted Array is : " + Arrays.toString(arr));
     }
 
+    public void bubbleSortIncMethod1Opti2(int[] arr) {
+
+        // boolean isSwapped = false; //Dont place here because it does not check in every round
+        for (int i = 1; i < arr.length; i++) {
+            boolean isSwapped = false;
+            for (int j = 0; j < (arr.length - i); j++) {
+
+                // System.out.print(j); // For Debugging purpose only
+
+                if (arr[j] > arr[j + 1]) {
+                    swap(arr, j, j + 1);
+                    isSwapped = true;
+                }
+            }
+            if (isSwapped == false) {
+                break;
+            }
+        }
+        System.out.println("Sorted Array is : " + Arrays.toString(arr));
+    }
+
     private int[] swap(int[] arr, int num1, int num2) {
         int temp = arr[num1];
         arr[num1] = arr[num2];
