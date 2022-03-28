@@ -15,26 +15,30 @@ public class Merge2SortedArray {
 
         while (i < arr1.length && j < arr2.length) {
             if (arr1[i] < arr2[j]) {
-                mergedArr[k] = arr1[i];
-                k++;
-                i++;
+                // mergedArr[k] = arr1[i];
+                mergedArr[k++] = arr1[i++];
+                // k++;
+                // i++;
             } else {
-                mergedArr[k] = arr2[j];
-                k++;
-                j++;
+                // mergedArr[k] = arr2[j];
+                mergedArr[k++] = arr2[j++];
+                // k++;
+                // j++;
             }
         }
 
         while (i < arr1.length) {
-            mergedArr[k] = arr1[i];
-            k++;
-            i++;
+            // mergedArr[k] = arr1[i];
+            mergedArr[k++] = arr1[i++];
+            // k++;
+            // i++;
         }
 
         while (j < arr2.length) {
-            mergedArr[k] = arr2[j];
-            k++;
-            j++;
+            // mergedArr[k] = arr2[j];
+            mergedArr[k++] = arr2[j++];
+            // k++;
+            // j++;
         }
         System.out.println("Merged Array : " + Arrays.toString(mergedArr));
     }
