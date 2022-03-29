@@ -10,6 +10,7 @@ import digits.Leetcode1281;
 import digits.Leetcode7;
 import maths.Leetcode231;
 import maths.Leetcode69;
+import string.Leetcode125;
 
 public class LearningDsa {
 
@@ -34,7 +35,17 @@ public class LearningDsa {
 
         // printLc189();
 
-        printLc1752();
+        // printLc1752();
+
+        printLc125();
+    }
+
+    static void printLc125() {
+        // String str=nooN;
+        // String str="N%o!o#$n";
+        // String str = "N0110n";
+        String str = "N01  10n";
+        new Leetcode125().validPalindrome(str);
     }
 
     static void printLc1752() {
