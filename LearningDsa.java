@@ -11,6 +11,7 @@ import digits.Leetcode7;
 import maths.Leetcode231;
 import maths.Leetcode69;
 import string.Leetcode125;
+import string.Leetcode1910;
 
 public class LearningDsa {
 
@@ -37,7 +38,17 @@ public class LearningDsa {
 
         // printLc1752();
 
-        printLc125();
+        // printLc125();
+
+        printLc1910();
+    }
+
+    static void printLc1910() {
+        // String str = "dabcecabcracabc";
+        // String subs = "abc";
+        String str = "H00000000o0000l0000a";
+        String subs = "00";
+        new Leetcode1910().removeAllOccOfSubstring(str, subs);
     }
 
     static void printLc125() {
