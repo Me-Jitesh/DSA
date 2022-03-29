@@ -25,6 +25,7 @@ import array.operation.SwapAlternate;
 import array.sorting.bubblesort.BubbleSortInc;
 import array.sorting.insertionsort.InsertionSortInc;
 import array.sorting.selectionsort.SelectionSortInc;
+import array.string.StringInJava;
 
 public class LearningDsa {
 
@@ -105,8 +106,15 @@ public class LearningDsa {
 
         // printMerge2SortedArray();
 
-        printSumOfTwoArrays();
+        // printSumOfTwoArrays();
 
+        printStringInJava();
+    }
+
+    static void printStringInJava() {
+        String str="noooon";
+        // String str="nono";
+        new StringInJava().isPalindrome(str);
     }
 
     static void printSumOfTwoArrays() {
