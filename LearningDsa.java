@@ -13,6 +13,7 @@ import maths.Leetcode69;
 import string.Leetcode1047;
 import string.Leetcode125;
 import string.Leetcode1910;
+import string.Leetcode443;
 import string.Leetcode567;
 
 public class LearningDsa {
@@ -46,8 +47,16 @@ public class LearningDsa {
 
         // printLc567();
 
-        printLc1047();
+        // printLc1047();
 
+        printLc443();
+
+    }
+
+    static void printLc443() {
+        // char[] chars = { 'a', 'a', 'a', 'b', 'b', 'c', 'c' };
+        char[] chars = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+        new Leetcode443().stringCompression(chars);
     }
 
     static void printLc1047() {
