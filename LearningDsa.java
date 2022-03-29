@@ -12,6 +12,7 @@ import maths.Leetcode231;
 import maths.Leetcode69;
 import string.Leetcode125;
 import string.Leetcode1910;
+import string.Leetcode567;
 
 public class LearningDsa {
 
@@ -40,7 +41,23 @@ public class LearningDsa {
 
         // printLc125();
 
-        printLc1910();
+        // printLc1910();
+
+        printLc567();
+
+    }
+
+    static void printLc567() {
+        // String s1 = "z";
+        String s1 = "ab";
+        String s2 = "eidbaooo";
+
+        boolean res = new Leetcode567().permutationInString(s1, s2);
+        if (res) {
+            System.out.println("Yes !! Permutation of S1 Present in S2 : " + res);
+        } else {
+            System.out.println("Nope !!  Permutation of S1 Not Present in S2 : " + res);
+        }
     }
 
     static void printLc1910() {
