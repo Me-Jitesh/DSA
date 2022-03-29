@@ -113,10 +113,11 @@ public class LearningDsa {
 
     static void printStringInJava() {
         // String str="noooon";
-        String str="output";
+        String str = "o ut  pu t ";
         // String str="nono";
         // new StringInJava().isPalindrome(str);
-        new StringInJava().maxOccCharecter(str);
+        // new StringInJava().maxOccCharecter(str);
+        new StringInJava().replaceSpaces(str);
     }
 
     static void printSumOfTwoArrays() {

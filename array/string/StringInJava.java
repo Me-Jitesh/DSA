@@ -43,4 +43,19 @@ public class StringInJava {
         char finalAns = (char) ('a' + ans);
         System.out.println("Charecter with Maximum Occurrence is : " + finalAns);
     }
+
+    public void replaceSpaces(String str) {
+
+        StringBuilder newString = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ' ') {
+                newString.append('@');
+                newString.append('4');
+                newString.append('0');
+            } else {
+                newString.append(str.charAt(i));
+            }
+        }
+        System.out.println("String After replacement with @40  : " + newString);
+    }
 }
