@@ -10,6 +10,7 @@ import digits.Leetcode1281;
 import digits.Leetcode7;
 import maths.Leetcode231;
 import maths.Leetcode69;
+import string.Leetcode1047;
 import string.Leetcode125;
 import string.Leetcode1910;
 import string.Leetcode567;
@@ -43,8 +44,16 @@ public class LearningDsa {
 
         // printLc1910();
 
-        printLc567();
+        // printLc567();
 
+        printLc1047();
+
+    }
+
+    static void printLc1047() {
+        // ToDo
+        String str = "abbaca";
+        new Leetcode1047().removeAdjacentDuplicate(str);
     }
 
     static void printLc567() {
