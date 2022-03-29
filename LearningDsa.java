@@ -20,6 +20,7 @@ import array.operation.PairSum;
 import array.operation.ReverseArray;
 import array.operation.ReverseArrayFromGivenIndex;
 import array.operation.SortZeroOnes;
+import array.operation.SumOfTwoArrays;
 import array.operation.SwapAlternate;
 import array.sorting.bubblesort.BubbleSortInc;
 import array.sorting.insertionsort.InsertionSortInc;
@@ -102,8 +103,16 @@ public class LearningDsa {
 
         // printReverseArrayFromGivenIndex();
 
-        printMerge2SortedArray();
+        // printMerge2SortedArray();
 
+        printSumOfTwoArrays();
+
+    }
+
+    static void printSumOfTwoArrays() {
+        int[] arr1 = { 4, 5, 1 };
+        int[] arr2 = { 3, 4, 5 };
+        new SumOfTwoArrays().sumOfTwoArraysMethod1(arr1, arr2);
     }
 
     static void printMerge2SortedArray() {
