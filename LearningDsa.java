@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import array.Leetcode1752;
 import array.Leetcode189;
 import array.Leetcode283;
 import array.Leetcode852;
@@ -31,8 +32,19 @@ public class LearningDsa {
 
         // printLc283();
 
-        printLc189();
+        // printLc189();
 
+        printLc1752();
+    }
+
+    static void printLc1752() {
+        // int[] arr = { 1, 2, 3, 4 };
+        // int[] arr = { 3, 4, 5, 1, 2 };
+        // int[] arr = { 2, 1, 3, 4 };
+        // int[] arr = { 1, 1, 1, 1 };
+        int[] arr = { 3, 4, 5, 1, 2, 6 };
+        // int[] arr = { 3, 4, 5, 1, 2, 1 };
+        new Leetcode1752().checkArrayIsSortednRotated(arr);
     }
 
     static void printLc189() {
