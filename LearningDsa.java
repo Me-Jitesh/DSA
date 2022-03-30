@@ -3,6 +3,7 @@ import java.util.Scanner;
 import array.Leetcode1752;
 import array.Leetcode189;
 import array.Leetcode283;
+import array.Leetcode48;
 import array.Leetcode54;
 import array.Leetcode852;
 import bitmanipulation.Leetcode1009;
@@ -52,7 +53,20 @@ public class LearningDsa {
 
         // printLc443();
 
-        printLc54();
+        // printLc54();
+
+        printLc48();
+
+    }
+
+    static void printLc48() {
+        // ToDo
+        int[][] matrix = {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+        };
+        new Leetcode48().rotateImage90drgree(matrix);
     }
 
     static void printLc54() {
