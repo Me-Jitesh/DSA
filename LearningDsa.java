@@ -5,6 +5,7 @@ import array.Leetcode189;
 import array.Leetcode283;
 import array.Leetcode48;
 import array.Leetcode54;
+import array.Leetcode74;
 import array.Leetcode852;
 import bitmanipulation.Leetcode1009;
 import bitmanipulation.Leetcode191;
@@ -55,8 +56,25 @@ public class LearningDsa {
 
         // printLc54();
 
-        printLc48();
+        // printLc48();
 
+        printLc74();
+
+    }
+
+    static void printLc74() {
+        int[][] matrix = {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+        };
+        int target = 8;
+        boolean res = new Leetcode74().binSearchIn2dMatrix(matrix, target);
+        if (res) {
+            System.out.println("Yess!! Present");
+        } else {
+            System.out.println("Nope!! Not Present");
+        }
     }
 
     static void printLc48() {
