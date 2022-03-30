@@ -11,6 +11,7 @@ import bitmanipulation.Leetcode1009;
 import bitmanipulation.Leetcode191;
 import digits.Leetcode1281;
 import digits.Leetcode7;
+import maths.Leetcode204;
 import maths.Leetcode231;
 import maths.Leetcode69;
 import string.Leetcode1047;
@@ -58,8 +59,13 @@ public class LearningDsa {
 
         // printLc48();
 
-        printLc74();
+        // printLc74();
 
+        printLc204();
+    }
+
+    static void printLc204() {
+        new Leetcode204().countPrimes(10);
     }
 
     static void printLc74() {
