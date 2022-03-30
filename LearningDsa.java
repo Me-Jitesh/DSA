@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import mathematical.FibonacciNumber;
+import mathematical.FindGCD;
 import mathematical.FindPower;
 import mathematical.FindnCr;
 import mathematical.PrimeNumber;
@@ -30,8 +31,17 @@ public class LearningDsa {
 
         // printFindPow();
 
-        prinFindnCr();
+        // prinFindnCr();
 
+        printFindGcd();
+
+    }
+
+    static void printFindGcd() {
+        int a = 24;
+        int b = 72;
+        int res = new FindGCD().findGcd(a, b);
+        System.out.println("GCD of Given Numbesr is : " + res);
     }
 
     static void prinFindnCr() {
