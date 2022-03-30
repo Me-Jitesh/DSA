@@ -3,6 +3,7 @@ import java.util.Scanner;
 import array.Leetcode1752;
 import array.Leetcode189;
 import array.Leetcode283;
+import array.Leetcode54;
 import array.Leetcode852;
 import bitmanipulation.Leetcode1009;
 import bitmanipulation.Leetcode191;
@@ -49,8 +50,18 @@ public class LearningDsa {
 
         // printLc1047();
 
-        printLc443();
+        // printLc443();
 
+        printLc54();
+    }
+
+    static void printLc54() {
+        int[][] matrix = {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+        };
+        new Leetcode54().spiralMatrix(matrix);
     }
 
     static void printLc443() {
