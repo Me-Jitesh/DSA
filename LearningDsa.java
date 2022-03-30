@@ -25,6 +25,7 @@ import array.operation.SwapAlternate;
 import array.sorting.bubblesort.BubbleSortInc;
 import array.sorting.insertionsort.InsertionSortInc;
 import array.sorting.selectionsort.SelectionSortInc;
+import array.twodimarray.PrintLikeWave;
 
 public class LearningDsa {
 
@@ -105,8 +106,18 @@ public class LearningDsa {
 
         // printMerge2SortedArray();
 
-        printSumOfTwoArrays();
+        // printSumOfTwoArrays();
 
+        printLikeWave();
+
+    }
+
+    static void printLikeWave() {
+        int[][] arr = { { 1, 2 }, { 3, 4 } };
+        int nRows = 2;
+        int nCols = 2;
+
+        new PrintLikeWave().printLikeAWave(arr, nRows, nCols);
     }
 
     static void printSumOfTwoArrays() {
