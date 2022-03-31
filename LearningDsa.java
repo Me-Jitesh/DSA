@@ -1,3 +1,4 @@
+import array.CheckSortedOrNot;
 import cp.CountWaysToReachNthStairs;
 import cp.PronounceDigit;
 import mathematical.Factorial;
@@ -11,7 +12,20 @@ public class LearningDsa {
         // printPowerOf2();
         // printNum();
         // printCountWaysToReachNthStairs();
-        printPronounceDigit();
+        // printPronounceDigit();
+        printCheckSortedOrNot();
+    }
+
+    static void printCheckSortedOrNot() {
+        int[] arr = { 1, 2, 2, 3, 5, 7, 9, 10, 15, 20 };
+        // int[] arr = { 1, 2, 2, 3, 5, 7, 9, 18, 10, 15, 20 };
+        int startIndex = 0;
+        boolean res = new CheckSortedOrNot().isSorted(arr, startIndex);
+        if (res) {
+            System.out.println("Yess it is Sorted : " + res);
+        } else {
+            System.out.println("Nope it is not  Sorted : " + res);
+        }
     }
 
     static void printPronounceDigit() {
