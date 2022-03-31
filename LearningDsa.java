@@ -14,6 +14,7 @@ import digits.Leetcode7;
 import maths.Leetcode204;
 import maths.Leetcode231;
 import maths.Leetcode69;
+import recursion.Leetcode509;
 import string.Leetcode1047;
 import string.Leetcode125;
 import string.Leetcode1910;
@@ -61,7 +62,16 @@ public class LearningDsa {
 
         // printLc74();
 
-        printLc204();
+        // printLc204();
+
+        printLc509();
+
+    }
+
+    static void printLc509() {
+        int n = 3;
+        int fib = new Leetcode509().fibonacciNumber(n);
+        System.out.println("Fibonacci Of " + n + " is : " + fib);
     }
 
     static void printLc204() {
