@@ -1,3 +1,4 @@
+import cp.CountWaysToReachNthStairs;
 import mathematical.Factorial;
 import mathematical.PowerOf2;
 import mathematical.PrintNum;
@@ -7,7 +8,14 @@ public class LearningDsa {
     public static void main(String[] args) {
         // printFactorial();
         // printPowerOf2();
-        printNum();
+        // printNum();
+        printCountWaysToReachNthStairs();
+    }
+
+    static void printCountWaysToReachNthStairs() {
+        int nStairs = 3;
+        int count = new CountWaysToReachNthStairs().countDistinctWayToClimbStair(nStairs);
+        System.out.println("Count of Distinct Way To Climb Stair : " + count);
     }
 
     static void printNum() {
