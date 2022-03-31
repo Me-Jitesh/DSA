@@ -1,11 +1,23 @@
 import mathematical.Factorial;
 import mathematical.PowerOf2;
+import mathematical.PrintNum;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
         // printFactorial();
-        printPowerOf2();
+        // printPowerOf2();
+        printNum();
+    }
+
+    static void printNum() {
+        int n = 5;
+
+        System.out.println("Tail Recursion : ");
+        new PrintNum().printNumTailRecursion(n);
+
+        System.out.println("Head Recursion : ");
+        new PrintNum().printNumHeadRecursion(n);
     }
 
     static void printFactorial() {
