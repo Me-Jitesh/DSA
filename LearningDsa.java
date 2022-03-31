@@ -1,4 +1,5 @@
 import cp.CountWaysToReachNthStairs;
+import cp.PronounceDigit;
 import mathematical.Factorial;
 import mathematical.PowerOf2;
 import mathematical.PrintNum;
@@ -9,7 +10,14 @@ public class LearningDsa {
         // printFactorial();
         // printPowerOf2();
         // printNum();
-        printCountWaysToReachNthStairs();
+        // printCountWaysToReachNthStairs();
+        printPronounceDigit();
+    }
+
+    static void printPronounceDigit() {
+        int num = 102394;
+        String[] pronounciations = { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+        new PronounceDigit().pronounceDigit(num, pronounciations);
     }
 
     static void printCountWaysToReachNthStairs() {
