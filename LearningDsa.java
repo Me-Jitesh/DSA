@@ -1,11 +1,14 @@
+import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
 
-        Node sllHead = printSLLCreateNode();
-        printSLLTraverseNode(sllHead);
+        // Node sllHead = printSLLCreateNode();
+        // printSLLTraverseNode(sllHead);
+        GenericNode<Integer> sllGHead = printSLLCreateGenericNode();
+        printSLLTraverseGNode(sllGHead);
 
     }
 
@@ -37,4 +40,34 @@ public class LearningDsa {
         return head;
 
     }
+
+    static GenericNode<Integer> printSLLCreateGenericNode() {
+
+        // Node Creation
+        GenericNode<Integer> sllNode1 = new GenericNode<>(110);
+        GenericNode<Integer> sllNode2 = new GenericNode<>(220);
+        GenericNode<Integer> sllNode3 = new GenericNode<>(330);
+        GenericNode<Integer> sllNode4 = new GenericNode<>(440);
+
+        // Linking Nodes
+        GenericNode<Integer> head = sllNode1;
+        head.nxt = sllNode2;
+        sllNode2.nxt = sllNode3;
+        sllNode3.nxt = sllNode4;
+        sllNode4 = null; // tail
+
+        System.out.println("SLL Generic Node Created Successfully");
+
+        return head;
+
+    }
+
+    static void printSLLTraverseGNode(GenericNode<Integer> sllHead) {
+        GenericNode<Integer> curr = sllHead;
+        while (curr != null) {
+            System.out.println(curr.data);
+            curr = curr.nxt;
+        }
+    }
+
 }
