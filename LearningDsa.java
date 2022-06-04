@@ -1,11 +1,20 @@
-import linkedlist.Node;
+import linkedlist.singlylinkedlist.Node;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
 
         Node sllHead = printSLLCreateNode();
+        printSLLTraverseNode(sllHead);
 
+    }
+
+    static void printSLLTraverseNode(Node sllHead) {
+        Node curr = sllHead;
+        while (curr != null) {
+            System.out.println(curr.data);
+            curr = curr.nxt;
+        }
     }
 
     static Node printSLLCreateNode() {
