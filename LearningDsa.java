@@ -22,7 +22,18 @@ public class LearningDsa {
 
         // Doubly Linked List
         DllNode dllHead = printDLLCreateNode();
-        printDLLTraverseNode(dllHead);
+        // printDLLTraverseNode(dllHead);
+        System.out.println(printDllLength(dllHead));
+    }
+
+    static int printDllLength(DllNode dllHead) {
+        DllNode curr = dllHead;
+        int counter = 0;
+        while (curr != null) {
+            curr = curr.nxt;
+            counter++;
+        }
+        return counter;
     }
 
     static void printDLLTraverseNode(DllNode dllHead) {
