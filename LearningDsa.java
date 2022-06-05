@@ -6,10 +6,20 @@ public class LearningDsa {
     public static void main(String[] args) {
 
         Node sllHead = printSLLCreateNode();
-        printSLLTraverseNode(sllHead);
+        // printSLLTraverseNode(sllHead);
         // GenericNode<Integer> sllGHead = printSLLCreateGenericNode();
         // printSLLTraverseGNode(sllGHead);
+        Node sllNewHead = insertAtHead(sllHead, 50);
+        printSLLTraverseNode(sllNewHead);
 
+    }
+
+    static Node insertAtHead(Node sllHead, int data) {
+        Node newNode = new Node(data);
+
+        newNode.nxt = sllHead;
+        sllHead = newNode;
+        return sllHead;
     }
 
     static void printSLLTraverseNode(Node sllHead) {
