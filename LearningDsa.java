@@ -34,7 +34,44 @@ public class LearningDsa {
         CSLLNode cslltail = null;
         cslltail = insertionAtCSLL(cslltail, 0, 10);
         cslltail = insertionAtCSLL(cslltail, 10, 15);
+        cslltail = insertionAtCSLL(cslltail, 10, 18);
+        cslltail = insertionAtCSLL(cslltail, 15, 25);
         csllNodeTraversal(cslltail);
+        deleteNode(cslltail, 25);
+
+    }
+
+    static void deleteNode(CSLLNode cslltail, int data) {
+        if (cslltail == null) {
+            System.out.println(" List is empty");
+            return;
+        } else {
+            // non-empty
+            // assuming that data is present in the Linked List
+            CSLLNode prev = cslltail;
+            CSLLNode curr = prev.nxt;
+
+            while (curr.data != data) {
+                prev = curr;
+                curr = curr.nxt;
+            }
+            prev.nxt = curr.nxt;
+            curr.nxt = null;
+
+            // 1 Node Linked List
+            if (curr == prev) {
+                cslltail = null;
+            }
+
+            // >=2 Node linked list
+            else if (cslltail == curr) {
+                cslltail = prev;
+            }
+
+            System.out.println("After Deletion Now List is : ");
+            csllNodeTraversal(cslltail);
+
+        }
     }
 
     static void csllNodeTraversal(CSLLNode cslltail) {
