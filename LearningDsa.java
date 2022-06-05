@@ -11,12 +11,31 @@ public class LearningDsa {
         // printSLLTraverseGNode(sllGHead);
         // Node sllNewHead = insertAtHead(sllHead, 50);
         // printSLLTraverseNode(sllNewHead);
-        Node sllNew = insertAtTail(sllHead, 50);
+        // Node sllNew = insertAtTail(sllHead, 50);
+        // printSLLTraverseNode(sllNew);
+        Node sllNew = insertAtPosition(sllHead, 4, 50);
         printSLLTraverseNode(sllNew);
 
     }
 
-    private static Node insertAtTail(Node sllHead, int data) {
+    static Node insertAtPosition(Node sllHead, int pos, int data) {
+        if (pos == 1) {
+            return insertAtHead(sllHead, data);
+        }
+
+        int cnt = 1;
+        Node curr = sllHead;
+        while (cnt < pos - 1) {
+            curr = curr.nxt;
+            cnt++;
+        }
+        Node newN = new Node(data);
+        newN.nxt = curr.nxt;
+        curr.nxt = newN;
+        return sllHead;
+    }
+
+    static Node insertAtTail(Node sllHead, int data) {
         Node curr = sllHead;
         Node newNode = new Node(data);
         while (curr.nxt != null) {
