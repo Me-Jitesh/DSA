@@ -23,7 +23,35 @@ public class LearningDsa {
         // Doubly Linked List
         DllNode dllHead = printDLLCreateNode();
         // printDLLTraverseNode(dllHead);
-        System.out.println(printDllLength(dllHead));
+        // System.out.println(printDllLength(dllHead));
+        DllNode newHead = insertAtPositionDll(dllHead, 1, 50);
+        printDLLTraverseNode(newHead);
+
+    }
+
+    static DllNode insertAtPositionDll(DllNode dllHead, int pos, int data) {
+        // Insert At Head
+        if (pos == 1) {
+            DllNode newNode = new DllNode(data);
+
+            newNode.nxt = dllHead;
+            dllHead.prev = newNode;
+            dllHead = newNode;
+            return dllHead;
+        } else {
+            return null;
+        }
+
+        // int cnt = 1;
+        // Node curr = sllHead;
+        // while (cnt < pos - 1) {
+        // curr = curr.nxt;
+        // cnt++;
+        // }
+        // Node newN = new Node(data);
+        // newN.nxt = curr.nxt;
+        // curr.nxt = newN;
+        // return sllHead;
     }
 
     static int printDllLength(DllNode dllHead) {
