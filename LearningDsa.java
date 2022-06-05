@@ -1,5 +1,6 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
+import linkedlist.circulerlinkedlist.CSLLNode;
 import linkedlist.doublylinkedlist.DllNode;
 
 public class LearningDsa {
@@ -21,14 +22,38 @@ public class LearningDsa {
         // printSLLTraverseNode(sllNew);
 
         // Doubly Linked List
-        DllNode dllHead = printDLLCreateNode();
+        // DllNode dllHead = printDLLCreateNode();
         // printDLLTraverseNode(dllHead);
         // System.out.println(printDllLength(dllHead));
         // dllHead = insertAtPositionDll(dllHead, 5, 50);
         // printDLLTraverseNode(dllHead);
-        dllHead = deleteAtPositionDll(dllHead, 4);
-        printDLLTraverseNode(dllHead);
+        // dllHead = deleteAtPositionDll(dllHead, 4);
+        // printDLLTraverseNode(dllHead);
 
+        // Singly Circuler Linked List
+        CSLLNode cslltail = null;
+        cslltail = insertionAtCSLL(cslltail, 0, 10);
+        cslltail = insertionAtCSLL(cslltail, 10, 15);
+    }
+
+    static CSLLNode insertionAtCSLL(CSLLNode cslltail, int adjElm, int data) {
+        if (cslltail == null) {
+            CSLLNode csllNode = new CSLLNode(data);
+            cslltail = csllNode;
+            csllNode.nxt = csllNode;
+            return cslltail;
+        } else {
+            CSLLNode curr = cslltail;
+
+            while (curr.data != adjElm) {
+                curr = curr.nxt;
+            }
+
+            CSLLNode temp = new CSLLNode(data);
+            temp.nxt = curr.nxt;
+            curr.nxt = temp;
+            return cslltail;
+        }
     }
 
     static DllNode deleteAtPositionDll(DllNode dllHead, int pos) {
