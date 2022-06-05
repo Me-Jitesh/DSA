@@ -5,10 +5,10 @@ public class LearningDsa {
 
     public static void main(String[] args) {
 
-        // Node sllHead = printSLLCreateNode();
-        // printSLLTraverseNode(sllHead);
-        GenericNode<Integer> sllGHead = printSLLCreateGenericNode();
-        printSLLTraverseGNode(sllGHead);
+        Node sllHead = printSLLCreateNode();
+        printSLLTraverseNode(sllHead);
+        // GenericNode<Integer> sllGHead = printSLLCreateGenericNode();
+        // printSLLTraverseGNode(sllGHead);
 
     }
 
@@ -33,7 +33,7 @@ public class LearningDsa {
         head.nxt = sllNode2;
         sllNode2.nxt = sllNode3;
         sllNode3.nxt = sllNode4;
-        sllNode4 = null; // tail
+        // sllNode4 = null; // tail
 
         System.out.println("SLL Created Successfully");
 
