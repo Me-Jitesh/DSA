@@ -13,9 +13,28 @@ public class LearningDsa {
         // printSLLTraverseNode(sllNewHead);
         // Node sllNew = insertAtTail(sllHead, 50);
         // printSLLTraverseNode(sllNew);
-        Node sllNew = insertAtPosition(sllHead, 4, 50);
+        // Node sllNew = insertAtPosition(sllHead, 4, 50);
+        // printSLLTraverseNode(sllNew);
+        Node sllNew = deleteAtPosition(sllHead, 3);
         printSLLTraverseNode(sllNew);
 
+    }
+
+    static Node deleteAtPosition(Node sllHead, int pos) {
+        if (pos == 1) {
+            sllHead = sllHead.nxt;
+        } else {
+            Node curr = sllHead;
+            Node prev = null;
+            int cnt = 1;
+            while (cnt < pos) {
+                prev = curr;
+                curr = curr.nxt;
+                cnt++;
+            }
+            prev.nxt = curr.nxt;
+        }
+        return sllHead;
     }
 
     static Node insertAtPosition(Node sllHead, int pos, int data) {
