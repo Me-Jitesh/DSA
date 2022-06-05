@@ -34,6 +34,22 @@ public class LearningDsa {
         CSLLNode cslltail = null;
         cslltail = insertionAtCSLL(cslltail, 0, 10);
         cslltail = insertionAtCSLL(cslltail, 10, 15);
+        csllNodeTraversal(cslltail);
+    }
+
+    static void csllNodeTraversal(CSLLNode cslltail) {
+
+        CSLLNode temp = cslltail;
+
+        if (cslltail == null) {
+            System.out.println("List is Empty ");
+            return;
+        }
+
+        do {
+            System.out.println(temp.data);
+            temp = temp.nxt;
+        } while (temp != cslltail);
     }
 
     static CSLLNode insertionAtCSLL(CSLLNode cslltail, int adjElm, int data) {
