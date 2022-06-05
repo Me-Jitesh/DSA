@@ -24,9 +24,33 @@ public class LearningDsa {
         DllNode dllHead = printDLLCreateNode();
         // printDLLTraverseNode(dllHead);
         // System.out.println(printDllLength(dllHead));
-        DllNode newHead = insertAtPositionDll(dllHead, 4, 50);
-        printDLLTraverseNode(newHead);
+        // dllHead = insertAtPositionDll(dllHead, 5, 50);
+        // printDLLTraverseNode(dllHead);
+        dllHead = deleteAtPositionDll(dllHead, 4);
+        printDLLTraverseNode(dllHead);
 
+    }
+
+    static DllNode deleteAtPositionDll(DllNode dllHead, int pos) {
+        if (pos == 1) {
+            DllNode temp = dllHead;
+            dllHead = dllHead.nxt; // Transfer of head
+            temp.nxt.prev = null; // Disconnecting with new head
+            temp.nxt = null; // Disconnecting Old Head
+        } else {
+            DllNode curr = dllHead;
+            DllNode prev = null;
+            int cnt = 1;
+            while (cnt < pos) {
+                prev = curr;
+                curr = curr.nxt;
+                cnt++;
+            }
+            curr.prev = null;
+            prev.nxt = curr.nxt;
+            curr.nxt = null;
+        }
+        return dllHead;
     }
 
     static DllNode insertAtPositionDll(DllNode dllHead, int pos, int data) {
@@ -50,6 +74,7 @@ public class LearningDsa {
             newN.nxt = curr.nxt;
             newN.prev = curr;
             curr.nxt = newN;
+            curr.nxt.prev = newN;
             return dllHead;
         }
     }
