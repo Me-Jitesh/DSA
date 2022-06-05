@@ -9,9 +9,21 @@ public class LearningDsa {
         // printSLLTraverseNode(sllHead);
         // GenericNode<Integer> sllGHead = printSLLCreateGenericNode();
         // printSLLTraverseGNode(sllGHead);
-        Node sllNewHead = insertAtHead(sllHead, 50);
-        printSLLTraverseNode(sllNewHead);
+        // Node sllNewHead = insertAtHead(sllHead, 50);
+        // printSLLTraverseNode(sllNewHead);
+        Node sllNew = insertAtTail(sllHead, 50);
+        printSLLTraverseNode(sllNew);
 
+    }
+
+    private static Node insertAtTail(Node sllHead, int data) {
+        Node curr = sllHead;
+        Node newNode = new Node(data);
+        while (curr.nxt != null) {
+            curr = curr.nxt;
+        }
+        curr.nxt = newNode;
+        return sllHead;
     }
 
     static Node insertAtHead(Node sllHead, int data) {
