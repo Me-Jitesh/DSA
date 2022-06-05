@@ -1,11 +1,13 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
+import linkedlist.doublylinkedlist.DllNode;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
 
-        Node sllHead = printSLLCreateNode();
+        // Singly Linked List
+        // Node sllHead = printSLLCreateNode();
         // printSLLTraverseNode(sllHead);
         // GenericNode<Integer> sllGHead = printSLLCreateGenericNode();
         // printSLLTraverseGNode(sllGHead);
@@ -15,9 +17,31 @@ public class LearningDsa {
         // printSLLTraverseNode(sllNew);
         // Node sllNew = insertAtPosition(sllHead, 4, 50);
         // printSLLTraverseNode(sllNew);
-        Node sllNew = deleteAtPosition(sllHead, 3);
-        printSLLTraverseNode(sllNew);
+        // Node sllNew = deleteAtPosition(sllHead, 3);
+        // printSLLTraverseNode(sllNew);
 
+        // Doubly Linked List
+        DllNode dllHead = printDLLCreateNode();
+    }
+
+    static DllNode printDLLCreateNode() {
+
+        // Node Creation
+        DllNode dllNode1 = new DllNode(10);
+        DllNode dllNode2 = new DllNode(20);
+        DllNode dllNode3 = new DllNode(30);
+        DllNode dllNode4 = new DllNode(40);
+
+        // Linking Nodes
+        DllNode head = dllNode1;
+        head.nxt = dllNode2;
+        dllNode2.nxt = dllNode3;
+        dllNode3.nxt = dllNode4;
+        // dllNode4 = null; // tail
+
+        System.out.println("DLL Created Successfully");
+
+        return head;
     }
 
     static Node deleteAtPosition(Node sllHead, int pos) {
