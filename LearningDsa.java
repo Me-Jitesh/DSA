@@ -24,7 +24,7 @@ public class LearningDsa {
         DllNode dllHead = printDLLCreateNode();
         // printDLLTraverseNode(dllHead);
         // System.out.println(printDllLength(dllHead));
-        DllNode newHead = insertAtPositionDll(dllHead, 1, 50);
+        DllNode newHead = insertAtPositionDll(dllHead, 4, 50);
         printDLLTraverseNode(newHead);
 
     }
@@ -38,20 +38,20 @@ public class LearningDsa {
             dllHead.prev = newNode;
             dllHead = newNode;
             return dllHead;
-        } else {
-            return null;
-        }
+        } else { // Insert at Given Position including end
+            int cnt = 1;
+            DllNode curr = dllHead;
+            while (cnt < pos - 1) {
+                curr = curr.nxt;
+                cnt++;
+            }
 
-        // int cnt = 1;
-        // Node curr = sllHead;
-        // while (cnt < pos - 1) {
-        // curr = curr.nxt;
-        // cnt++;
-        // }
-        // Node newN = new Node(data);
-        // newN.nxt = curr.nxt;
-        // curr.nxt = newN;
-        // return sllHead;
+            DllNode newN = new DllNode(data);
+            newN.nxt = curr.nxt;
+            newN.prev = curr;
+            curr.nxt = newN;
+            return dllHead;
+        }
     }
 
     static int printDllLength(DllNode dllHead) {
