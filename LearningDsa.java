@@ -1,6 +1,7 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
-import linkedlist.singlylinkedlist.questions.ReverseLinkedList;
+import linkedlist.singlylinkedlist.questions.MidOfLinkedList;
+// import linkedlist.singlylinkedlist.questions.ReverseLinkedList;
 import linkedlist.circulerlinkedlist.CSLLNode;
 import linkedlist.doublylinkedlist.DllNode;
 
@@ -41,13 +42,17 @@ public class LearningDsa {
         // deleteNode(cslltail, 25);
 
         // Questions
-        Node head = printSLLCreateNode();
+        Node sllHead = printSLLCreateNode();
         // head = new ReverseLinkedList().reverseApproach1(head);
         // printSLLTraverseNode(head);
         // new ReverseLinkedList().reverseApproach2(head, head, null);
-        head = new ReverseLinkedList().reverseApproach3(head);
-        printSLLTraverseNode(head);
+        // head = new ReverseLinkedList().reverseApproach3(head);
+        // printSLLTraverseNode(head);
 
+        // sllHead = insertAtHead(sllHead, 50);
+        // sllHead = insertAtHead(sllHead, 60);
+        // sllHead = insertAtHead(sllHead, 70);
+        new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
