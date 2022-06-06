@@ -49,10 +49,12 @@ public class LearningDsa {
         // head = new ReverseLinkedList().reverseApproach3(head);
         // printSLLTraverseNode(head);
 
-        // sllHead = insertAtHead(sllHead, 50);
-        // sllHead = insertAtHead(sllHead, 60);
+        sllHead = insertAtTail(sllHead, 50);
+        sllHead = insertAtTail(sllHead, 60);
         // sllHead = insertAtHead(sllHead, 70);
-        new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
+        // new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
+        Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
+        System.out.println("Value at Middle is : " + mid.data);
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
