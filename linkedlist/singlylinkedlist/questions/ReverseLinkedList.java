@@ -21,4 +21,17 @@ public class ReverseLinkedList {
         }
         return prev;// New Head
     }
+
+    public void reverseApproach2(Node head, Node curr, Node prev) {
+
+        // base case
+        if (curr == null) {
+            head = prev;
+            return;
+        }
+
+        Node forward = curr.nxt;
+        reverseApproach2(head, forward, curr);
+        curr.nxt = prev;
+    }
 }
