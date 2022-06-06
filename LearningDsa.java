@@ -1,5 +1,6 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
+import linkedlist.singlylinkedlist.questions.ReverseLinkedList;
 import linkedlist.circulerlinkedlist.CSLLNode;
 import linkedlist.doublylinkedlist.DllNode;
 
@@ -31,13 +32,18 @@ public class LearningDsa {
         // printDLLTraverseNode(dllHead);
 
         // Singly Circuler Linked List
-        CSLLNode cslltail = null;
-        cslltail = insertionAtCSLL(cslltail, 0, 10);
-        cslltail = insertionAtCSLL(cslltail, 10, 15);
-        cslltail = insertionAtCSLL(cslltail, 10, 18);
-        cslltail = insertionAtCSLL(cslltail, 15, 25);
-        csllNodeTraversal(cslltail);
-        deleteNode(cslltail, 25);
+        // CSLLNode cslltail = null;
+        // cslltail = insertionAtCSLL(cslltail, 0, 10);
+        // cslltail = insertionAtCSLL(cslltail, 10, 15);
+        // cslltail = insertionAtCSLL(cslltail, 10, 18);
+        // cslltail = insertionAtCSLL(cslltail, 15, 25);
+        // csllNodeTraversal(cslltail);
+        // deleteNode(cslltail, 25);
+
+        // Questions
+        Node head = printSLLCreateNode();
+        head = new ReverseLinkedList().reverseApproach1(head);
+        printSLLTraverseNode(head);
 
     }
 
