@@ -44,7 +44,9 @@ public class LearningDsa {
         Node head = printSLLCreateNode();
         // head = new ReverseLinkedList().reverseApproach1(head);
         // printSLLTraverseNode(head);
-        new ReverseLinkedList().reverseApproach2(head, head, null);
+        // new ReverseLinkedList().reverseApproach2(head, head, null);
+        head = new ReverseLinkedList().reverseApproach3(head);
+        printSLLTraverseNode(head);
 
     }
 

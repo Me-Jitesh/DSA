@@ -34,4 +34,17 @@ public class ReverseLinkedList {
         reverseApproach2(head, forward, curr);
         curr.nxt = prev;
     }
+
+    public Node reverseApproach3(Node head) {
+
+        // base case
+        if (head == null || head.nxt == null) {
+            return head;
+        }
+
+        Node smallHead = reverseApproach3(head.nxt);
+        head.nxt.nxt = head;
+        head.nxt = null;
+        return smallHead;
+    }
 }
