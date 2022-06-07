@@ -1,7 +1,8 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
+import linkedlist.singlylinkedlist.questions.CircularlyLinked;
 // import linkedlist.singlylinkedlist.questions.MidOfLinkedList;
-import linkedlist.singlylinkedlist.questions.ReverseInKGroup;
+// import linkedlist.singlylinkedlist.questions.ReverseInKGroup;
 // import linkedlist.singlylinkedlist.questions.ReverseLinkedList;
 import linkedlist.circulerlinkedlist.CSLLNode;
 import linkedlist.doublylinkedlist.DllNode;
@@ -57,8 +58,10 @@ public class LearningDsa {
         // Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
         // System.out.println("Value at Middle is : " + mid.data);
 
-        Node head = new ReverseInKGroup().reverseInKGroup(sllHead, 2);
-        printSLLTraverseNode(head);
+        // Node head = new ReverseInKGroup().reverseInKGroup(sllHead, 2);
+        // printSLLTraverseNode(head);
+
+        System.out.println(new CircularlyLinked().isCircularlyLinkedApproach1(sllHead));
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
@@ -288,7 +291,8 @@ public class LearningDsa {
         head.nxt = sllNode2;
         sllNode2.nxt = sllNode3;
         sllNode3.nxt = sllNode4;
-        // sllNode4 = null; // tail
+        // sllNode4.nxt = null; // tail
+        // sllNode4.nxt = sllNode1; // tail
 
         System.out.println("SLL Created Successfully");
 
