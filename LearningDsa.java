@@ -1,9 +1,10 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
+import linkedlist.singlylinkedlist.questions.MergeTwoSortedList;
 // import linkedlist.singlylinkedlist.questions.CircularlyLinked;
 // import linkedlist.singlylinkedlist.questions.DetectAndRemoveLoop;
 // import linkedlist.singlylinkedlist.questions.RemoveDuplicates;
-import linkedlist.singlylinkedlist.questions.Sort0s1s2s;
+// import linkedlist.singlylinkedlist.questions.Sort0s1s2s;
 // import linkedlist.singlylinkedlist.questions.MidOfLinkedList;
 // import linkedlist.singlylinkedlist.questions.ReverseInKGroup;
 // import linkedlist.singlylinkedlist.questions.ReverseLinkedList;
@@ -54,9 +55,9 @@ public class LearningDsa {
         // head = new ReverseLinkedList().reverseApproach3(head);
         // printSLLTraverseNode(head);
 
-        sllHead = insertAtTail(sllHead, 1);
-        sllHead = insertAtTail(sllHead, 0);
-        sllHead = insertAtHead(sllHead, 2);
+        sllHead = insertAtTail(sllHead, 50);
+        sllHead = insertAtTail(sllHead, 60);
+        // sllHead = insertAtHead(sllHead, 6);
         // new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
         // Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
         // System.out.println("Value at Middle is : " + mid.data);
@@ -75,8 +76,12 @@ public class LearningDsa {
         // sllHead = new RemoveDuplicates().removeDuplicatesFromSortedList(sllHead);
 
         // sllHead = new Sort0s1s2s().sortApproach1(sllHead);
-        sllHead = new Sort0s1s2s().sortApproach2(sllHead);
-        printSLLTraverseNode(sllHead);
+        // sllHead = new Sort0s1s2s().sortApproach2(sllHead);
+
+        Node first = sllHead;
+        Node second = printSLLCreateNode();
+        Node head = new MergeTwoSortedList().mergeTwoList(first, second);
+        printSLLTraverseNode(head);
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
@@ -296,10 +301,10 @@ public class LearningDsa {
     static Node printSLLCreateNode() {
 
         // Node Creation
-        Node sllNode1 = new Node(2);
-        Node sllNode2 = new Node(0);
-        Node sllNode3 = new Node(1);
-        Node sllNode4 = new Node(0);
+        Node sllNode1 = new Node(10);
+        Node sllNode2 = new Node(20);
+        Node sllNode3 = new Node(30);
+        Node sllNode4 = new Node(40);
 
         // Linking Nodes
         Node head = sllNode1;
