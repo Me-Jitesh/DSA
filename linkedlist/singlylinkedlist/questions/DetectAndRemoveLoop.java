@@ -24,4 +24,27 @@ public class DetectAndRemoveLoop {
         }
         return false;
     }
+
+    public Node detectLoopOpti(Node head) {
+
+        if (head == null) {
+            return null;
+        }
+
+        Node slow = head;
+        Node fast = head;
+
+        while (slow != null && fast != null) {
+            fast = fast.nxt;
+            if (fast != null) {
+                fast = fast.nxt;
+            }
+            slow = slow.nxt;
+            if (slow == fast) {
+                System.out.println("Loop Present at  " + slow.data);
+                return slow;
+            }
+        }
+        return null;
+    }
 }

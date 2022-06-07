@@ -65,7 +65,8 @@ public class LearningDsa {
         // System.out.println(new
         // CircularlyLinked().isCircularlyLinkedApproach1(sllHead));
 
-        System.out.println(new DetectAndRemoveLoop().detectLoop(sllHead));
+        // System.out.println(new DetectAndRemoveLoop().detectLoop(sllHead));
+        System.out.println(new DetectAndRemoveLoop().detectLoopOpti(sllHead));
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
@@ -296,7 +297,7 @@ public class LearningDsa {
         sllNode2.nxt = sllNode3;
         sllNode3.nxt = sllNode4;
         // sllNode4.nxt = null; // tail
-        sllNode4.nxt = sllNode1; // tail
+        sllNode4.nxt = sllNode3; // tail
 
         System.out.println("SLL Created Successfully");
 
