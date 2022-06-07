@@ -67,7 +67,8 @@ public class LearningDsa {
 
         // System.out.println(new DetectAndRemoveLoop().detectLoop(sllHead));
         // System.out.println(new DetectAndRemoveLoop().detectLoopOpti(sllHead));
-        new DetectAndRemoveLoop().findStartingNode(sllHead);
+        // new DetectAndRemoveLoop().findStartingNode(sllHead);
+        new DetectAndRemoveLoop().removeLoop(sllHead);
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {

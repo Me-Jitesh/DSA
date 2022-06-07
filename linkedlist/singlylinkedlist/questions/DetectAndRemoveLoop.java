@@ -28,6 +28,7 @@ public class DetectAndRemoveLoop {
     public Node detectLoopOpti(Node head) {
 
         if (head == null) {
+            System.err.println("List Empty Hai");
             return null;
         }
 
@@ -45,6 +46,7 @@ public class DetectAndRemoveLoop {
                 return slow;
             }
         }
+        System.err.println("Loop Mila Hi nahi");
         return null;
     }
 
@@ -62,5 +64,20 @@ public class DetectAndRemoveLoop {
         }
         System.out.println("Starting Node is : " + slow.data);
         return slow;
+    }
+
+    public void removeLoop(Node head) {
+        if (head == null) {
+            return;
+        }
+
+        Node startingOfLoop = findStartingNode(head);
+        Node temp = startingOfLoop;
+        while (temp.nxt != startingOfLoop) {
+            temp = temp.nxt;
+        }
+        temp.nxt = null;
+        System.out.println("Loop Removed...");
+        detectLoopOpti(head);
     }
 }
