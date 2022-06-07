@@ -1,6 +1,7 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
-import linkedlist.singlylinkedlist.questions.MidOfLinkedList;
+// import linkedlist.singlylinkedlist.questions.MidOfLinkedList;
+import linkedlist.singlylinkedlist.questions.ReverseInKGroup;
 // import linkedlist.singlylinkedlist.questions.ReverseLinkedList;
 import linkedlist.circulerlinkedlist.CSLLNode;
 import linkedlist.doublylinkedlist.DllNode;
@@ -49,12 +50,15 @@ public class LearningDsa {
         // head = new ReverseLinkedList().reverseApproach3(head);
         // printSLLTraverseNode(head);
 
-        sllHead = insertAtTail(sllHead, 50);
-        sllHead = insertAtTail(sllHead, 60);
+        // sllHead = insertAtTail(sllHead, 50);
+        // sllHead = insertAtTail(sllHead, 60);
         // sllHead = insertAtHead(sllHead, 70);
         // new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
-        Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
-        System.out.println("Value at Middle is : " + mid.data);
+        // Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
+        // System.out.println("Value at Middle is : " + mid.data);
+
+        Node head = new ReverseInKGroup().reverseInKGroup(sllHead, 2);
+        printSLLTraverseNode(head);
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
