@@ -47,4 +47,20 @@ public class DetectAndRemoveLoop {
         }
         return null;
     }
+
+    public Node findStartingNode(Node head) {
+        if (head == null) {
+            return null;
+        }
+
+        Node intersection = detectLoopOpti(head);
+        Node slow = head;
+
+        while (slow != intersection) {
+            slow = slow.nxt;
+            intersection = intersection.nxt;
+        }
+        System.out.println("Starting Node is : " + slow.data);
+        return slow;
+    }
 }
