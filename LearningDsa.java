@@ -1,7 +1,8 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
 // import linkedlist.singlylinkedlist.questions.CircularlyLinked;
-import linkedlist.singlylinkedlist.questions.DetectAndRemoveLoop;
+// import linkedlist.singlylinkedlist.questions.DetectAndRemoveLoop;
+import linkedlist.singlylinkedlist.questions.RemoveDuplicates;
 // import linkedlist.singlylinkedlist.questions.MidOfLinkedList;
 // import linkedlist.singlylinkedlist.questions.ReverseInKGroup;
 // import linkedlist.singlylinkedlist.questions.ReverseLinkedList;
@@ -52,9 +53,9 @@ public class LearningDsa {
         // head = new ReverseLinkedList().reverseApproach3(head);
         // printSLLTraverseNode(head);
 
-        // sllHead = insertAtTail(sllHead, 50);
-        // sllHead = insertAtTail(sllHead, 60);
-        // sllHead = insertAtHead(sllHead, 70);
+        sllHead = insertAtTail(sllHead, 40);
+        sllHead = insertAtTail(sllHead, 40);
+        sllHead = insertAtHead(sllHead, 10);
         // new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
         // Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
         // System.out.println("Value at Middle is : " + mid.data);
@@ -68,7 +69,10 @@ public class LearningDsa {
         // System.out.println(new DetectAndRemoveLoop().detectLoop(sllHead));
         // System.out.println(new DetectAndRemoveLoop().detectLoopOpti(sllHead));
         // new DetectAndRemoveLoop().findStartingNode(sllHead);
-        new DetectAndRemoveLoop().removeLoop(sllHead);
+        // new DetectAndRemoveLoop().removeLoop(sllHead);
+
+        sllHead = new RemoveDuplicates().removeDuplicatesFromSortedList(sllHead);
+        printSLLTraverseNode(sllHead);
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
@@ -299,7 +303,7 @@ public class LearningDsa {
         sllNode2.nxt = sllNode3;
         sllNode3.nxt = sllNode4;
         // sllNode4.nxt = null; // tail
-        sllNode4.nxt = sllNode2; // tail
+        // sllNode4.nxt = sllNode2; //Make Circular
 
         System.out.println("SLL Created Successfully");
 
