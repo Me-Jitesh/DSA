@@ -74,7 +74,8 @@ public class LearningDsa {
 
         // sllHead = new RemoveDuplicates().removeDuplicatesFromSortedList(sllHead);
 
-        sllHead = new Sort0s1s2s().sortApproach1(sllHead);
+        // sllHead = new Sort0s1s2s().sortApproach1(sllHead);
+        sllHead = new Sort0s1s2s().sortApproach2(sllHead);
         printSLLTraverseNode(sllHead);
     }
 
