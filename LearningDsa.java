@@ -1,6 +1,7 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
-import linkedlist.singlylinkedlist.questions.MergeTwoSortedList;
+// import linkedlist.singlylinkedlist.questions.MergeTwoSortedList;
+import linkedlist.singlylinkedlist.questions.PalindromeList;
 // import linkedlist.singlylinkedlist.questions.CircularlyLinked;
 // import linkedlist.singlylinkedlist.questions.DetectAndRemoveLoop;
 // import linkedlist.singlylinkedlist.questions.RemoveDuplicates;
@@ -55,8 +56,8 @@ public class LearningDsa {
         // head = new ReverseLinkedList().reverseApproach3(head);
         // printSLLTraverseNode(head);
 
-        sllHead = insertAtTail(sllHead, 50);
-        sllHead = insertAtTail(sllHead, 60);
+        sllHead = insertAtTail(sllHead, 20);
+        sllHead = insertAtTail(sllHead, 10);
         // sllHead = insertAtHead(sllHead, 6);
         // new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
         // Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
@@ -78,10 +79,12 @@ public class LearningDsa {
         // sllHead = new Sort0s1s2s().sortApproach1(sllHead);
         // sllHead = new Sort0s1s2s().sortApproach2(sllHead);
 
-        Node first = sllHead;
-        Node second = printSLLCreateNode();
-        Node head = new MergeTwoSortedList().mergeTwoList(first, second);
-        printSLLTraverseNode(head);
+        // Node first = sllHead;
+        // Node second = printSLLCreateNode();
+        // Node head = new MergeTwoSortedList().mergeTwoList(first, second);
+        // printSLLTraverseNode(head);
+
+        new PalindromeList().isPalindrome(sllHead);
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
@@ -224,7 +227,7 @@ public class LearningDsa {
         DllNode dllNode1 = new DllNode(10);
         DllNode dllNode2 = new DllNode(20);
         DllNode dllNode3 = new DllNode(30);
-        DllNode dllNode4 = new DllNode(40);
+        DllNode dllNode4 = new DllNode(30);
 
         // Linking Nodes
         DllNode head = dllNode1;
