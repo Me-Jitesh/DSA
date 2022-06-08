@@ -1,7 +1,8 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
+import linkedlist.singlylinkedlist.questions.AddTwoNumbers;
 // import linkedlist.singlylinkedlist.questions.MergeTwoSortedList;
-import linkedlist.singlylinkedlist.questions.PalindromeList;
+// import linkedlist.singlylinkedlist.questions.PalindromeList;
 // import linkedlist.singlylinkedlist.questions.CircularlyLinked;
 // import linkedlist.singlylinkedlist.questions.DetectAndRemoveLoop;
 // import linkedlist.singlylinkedlist.questions.RemoveDuplicates;
@@ -56,8 +57,8 @@ public class LearningDsa {
         // head = new ReverseLinkedList().reverseApproach3(head);
         // printSLLTraverseNode(head);
 
-        sllHead = insertAtTail(sllHead, 20);
-        sllHead = insertAtTail(sllHead, 10);
+        sllHead = insertAtTail(sllHead, 8);
+        sllHead = insertAtTail(sllHead, 5);
         // sllHead = insertAtHead(sllHead, 6);
         // new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
         // Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
@@ -84,7 +85,12 @@ public class LearningDsa {
         // Node head = new MergeTwoSortedList().mergeTwoList(first, second);
         // printSLLTraverseNode(head);
 
-        new PalindromeList().isPalindrome(sllHead);
+        // new PalindromeList().isPalindrome(sllHead);
+
+        Node sllHead2 = printSLLCreateNode();
+        Node sumList = new AddTwoNumbers().sum(sllHead, sllHead2);
+        printSLLTraverseNode(sumList);
+
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
@@ -304,10 +310,10 @@ public class LearningDsa {
     static Node printSLLCreateNode() {
 
         // Node Creation
-        Node sllNode1 = new Node(10);
-        Node sllNode2 = new Node(20);
-        Node sllNode3 = new Node(30);
-        Node sllNode4 = new Node(40);
+        Node sllNode1 = new Node(1);
+        Node sllNode2 = new Node(2);
+        Node sllNode3 = new Node(3);
+        Node sllNode4 = new Node(4);
 
         // Linking Nodes
         Node head = sllNode1;
