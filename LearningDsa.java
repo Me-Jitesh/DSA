@@ -1,7 +1,8 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
 import linkedlist.singlylinkedlist.RandNode;
-import linkedlist.singlylinkedlist.questions.CloneListWithRandomPointer;
+// import linkedlist.singlylinkedlist.questions.CloneListWithRandomPointer;
+import linkedlist.singlylinkedlist.questions.MergeSortInLinkedList;
 // import linkedlist.singlylinkedlist.questions.AddTwoNumbers;
 // import linkedlist.singlylinkedlist.questions.MergeTwoSortedList;
 // import linkedlist.singlylinkedlist.questions.PalindromeList;
@@ -20,7 +21,7 @@ public class LearningDsa {
     public static void main(String[] args) {
 
         // Singly Linked List
-        // Node sllHead = printSLLCreateNode();
+        Node sllHead = printSLLCreateNode();
         // printSLLTraverseNode(sllHead);
         // GenericNode<Integer> sllGHead = printSLLCreateGenericNode();
         // printSLLTraverseGNode(sllGHead);
@@ -93,11 +94,14 @@ public class LearningDsa {
         // Node sumList = new AddTwoNumbers().sum(sllHead, sllHead2);
         // printSLLTraverseNode(sumList);
 
-        RandNode head = createRandNode();
-        randNodeTraverse(head);
-        // head = new CloneListWithRandomPointer().cloneListApproach1(head);
-        head = new CloneListWithRandomPointer().cloneListApproach2(head);
-        randNodeTraverse(head);
+        // RandNode head = createRandNode();
+        // randNodeTraverse(head);
+        // // head = new CloneListWithRandomPointer().cloneListApproach1(head);
+        // head = new CloneListWithRandomPointer().cloneListApproach2(head);
+        // randNodeTraverse(head);
+
+        Node head = new MergeSortInLinkedList().mergeSortInLinkedList(sllHead);
+        printSLLTraverseNode(head);
     }
 
     static void randNodeTraverse(RandNode head) {
@@ -353,9 +357,9 @@ public class LearningDsa {
     static Node printSLLCreateNode() {
 
         // Node Creation
-        Node sllNode1 = new Node(1);
-        Node sllNode2 = new Node(2);
-        Node sllNode3 = new Node(3);
+        Node sllNode1 = new Node(10);
+        Node sllNode2 = new Node(12);
+        Node sllNode3 = new Node(33);
         Node sllNode4 = new Node(4);
 
         // Linking Nodes
