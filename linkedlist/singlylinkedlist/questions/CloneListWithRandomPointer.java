@@ -39,6 +39,60 @@ public class CloneListWithRandomPointer {
         return cloneHead;
     }
 
+    public RandNode cloneListApproach2(RandNode head) {
+
+        // step 1: Craete a clone List
+        RandNode cloneHead = null;
+        RandNode temp = head;
+
+        while (temp != null) {
+            cloneHead = insertAtTail(cloneHead, temp.data);
+            temp = temp.nxt;
+        }
+
+        // step 2: add clone nodes in between Original list
+        RandNode origionalNode = head;
+        RandNode cloneNode = cloneHead;
+
+        while (origionalNode != null && cloneNode != null) {
+            RandNode next = origionalNode.nxt;
+            origionalNode.nxt = cloneNode;
+            origionalNode = next;
+
+            next = cloneNode.nxt;
+            cloneNode.nxt = origionalNode;
+            cloneNode = next;
+        }
+        // step 3: random pointer copy
+        temp = head;
+        while (temp != null) {
+            if (temp.nxt != null) {
+                if (temp.random != null) {
+                    temp.nxt.random = temp.random.nxt;
+                } else {
+                    temp.nxt = temp.random;
+                }
+            }
+            temp = temp.nxt.nxt;
+        }
+        // step 4: revert changes done in step 2
+        origionalNode = head;
+        cloneNode = cloneHead;
+
+        while (origionalNode != null && cloneNode != null) {
+            origionalNode.nxt = cloneNode.nxt;
+            origionalNode = origionalNode.nxt;
+
+            if (origionalNode != null) {
+                cloneNode.nxt = origionalNode.nxt;
+            }
+            cloneNode = cloneNode.nxt;
+        }
+
+        // step 5: return ans
+        return cloneHead;
+    }
+
     RandNode insertAtTail(RandNode head, int data) {
 
         if (head == null) {

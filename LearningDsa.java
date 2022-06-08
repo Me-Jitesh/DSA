@@ -95,7 +95,8 @@ public class LearningDsa {
 
         RandNode head = createRandNode();
         randNodeTraverse(head);
-        head = new CloneListWithRandomPointer().cloneListApproach1(head);
+        // head = new CloneListWithRandomPointer().cloneListApproach1(head);
+        head = new CloneListWithRandomPointer().cloneListApproach2(head);
         randNodeTraverse(head);
     }
 
