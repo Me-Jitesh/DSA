@@ -10,12 +10,13 @@ public class AddTwoNumbers {
         sllHead2 = new ReverseLinkedList().reverseApproach3(sllHead2);
 
         // Addition
-        Node ans = addition(sllHead1, sllHead2);
+        // Node ans = addition(sllHead1, sllHead2);
+        Node ans = additionOpti(sllHead1, sllHead2);
         ans = new ReverseLinkedList().reverseApproach3(ans);
         return ans;
     }
 
-    private Node addition(Node sllHead1, Node sllHead2) {
+    Node addition(Node sllHead1, Node sllHead2) {
         int carry = 0;
         Node sumList = null;
 
@@ -52,6 +53,38 @@ public class AddTwoNumbers {
             int digit = res % 10;
             sumList = insertAtTail(sumList, digit);
             carry = res / 10;
+        }
+
+        return sumList;
+    }
+
+    Node additionOpti(Node sllHead1, Node sllHead2) {
+        int carry = 0;
+        Node sumList = null;
+
+        while (sllHead1 != null || sllHead2 != null || carry != 0) {
+            int val1 = 0;
+            if (sllHead1 != null) {
+                val1 = sllHead1.data;
+            }
+
+            int val2 = 0;
+            if (sllHead2 != null) {
+                val2 = sllHead2.data;
+            }
+
+            int res = carry + val1 + val2;
+            int digit = res % 10;
+            sumList = insertAtTail(sumList, digit);
+            carry = res / 10;
+
+            if (sllHead1 != null) {
+                sllHead1 = sllHead1.nxt;
+            }
+
+            if (sllHead2 != null) {
+                sllHead2 = sllHead2.nxt;
+            }
         }
 
         return sumList;
