@@ -1,6 +1,8 @@
 import linkedlist.singlylinkedlist.GenericNode;
 import linkedlist.singlylinkedlist.Node;
-import linkedlist.singlylinkedlist.questions.AddTwoNumbers;
+import linkedlist.singlylinkedlist.RandNode;
+import linkedlist.singlylinkedlist.questions.CloneListWithRandomPointer;
+// import linkedlist.singlylinkedlist.questions.AddTwoNumbers;
 // import linkedlist.singlylinkedlist.questions.MergeTwoSortedList;
 // import linkedlist.singlylinkedlist.questions.PalindromeList;
 // import linkedlist.singlylinkedlist.questions.CircularlyLinked;
@@ -50,15 +52,15 @@ public class LearningDsa {
         // deleteNode(cslltail, 25);
 
         // Questions
-        Node sllHead = printSLLCreateNode();
+        // Node sllHead = printSLLCreateNode();
         // head = new ReverseLinkedList().reverseApproach1(head);
         // printSLLTraverseNode(head);
         // new ReverseLinkedList().reverseApproach2(head, head, null);
         // head = new ReverseLinkedList().reverseApproach3(head);
         // printSLLTraverseNode(head);
 
-        sllHead = insertAtTail(sllHead, 8);
-        sllHead = insertAtTail(sllHead, 5);
+        // sllHead = insertAtTail(sllHead, 8);
+        // sllHead = insertAtTail(sllHead, 5);
         // sllHead = insertAtHead(sllHead, 6);
         // new MidOfLinkedList().midOfLinkedListApproach1(sllHead);
         // Node mid = new MidOfLinkedList().midOfLinkedListApproach2(sllHead);
@@ -87,10 +89,47 @@ public class LearningDsa {
 
         // new PalindromeList().isPalindrome(sllHead);
 
-        Node sllHead2 = printSLLCreateNode();
-        Node sumList = new AddTwoNumbers().sum(sllHead, sllHead2);
-        printSLLTraverseNode(sumList);
+        // Node sllHead2 = printSLLCreateNode();
+        // Node sumList = new AddTwoNumbers().sum(sllHead, sllHead2);
+        // printSLLTraverseNode(sumList);
 
+        RandNode head = createRandNode();
+        randNodeTraverse(head);
+        head = new CloneListWithRandomPointer().cloneListApproach1(head);
+        randNodeTraverse(head);
+    }
+
+    static void randNodeTraverse(RandNode head) {
+        if (head == null) {
+            System.out.println("List Empty Hai Bhai");
+        }
+        RandNode curr = head;
+        while (curr != null) {
+            System.out.print(curr.data + " -> ");
+            System.out.print(curr.random.data + " R ");
+            curr = curr.nxt;
+        }
+        System.out.println();
+    }
+
+    static RandNode createRandNode() {
+        RandNode r1 = new RandNode(1);
+        RandNode r2 = new RandNode(2);
+        RandNode r3 = new RandNode(3);
+        RandNode r4 = new RandNode(4);
+        RandNode r5 = new RandNode(5);
+
+        r1.nxt = r2;
+        r1.random = r3;
+        r2.nxt = r3;
+        r2.random = r1;
+        r3.nxt = r4;
+        r3.random = r5;
+        r4.nxt = r5;
+        r4.random = r3;
+        r5.random = r2;
+
+        return r1;
     }
 
     static void deleteNode(CSLLNode cslltail, int data) {
@@ -300,6 +339,9 @@ public class LearningDsa {
     }
 
     static void printSLLTraverseNode(Node sllHead) {
+        if (sllHead == null) {
+            System.out.println("List Empty Hai Bhai");
+        }
         Node curr = sllHead;
         while (curr != null) {
             System.out.println(curr.data);
