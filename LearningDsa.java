@@ -1,9 +1,27 @@
 import stack.StackArray;
+import stack.questions.TwoStacksInAnArray;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
-        createStack();
+        // createStack();
+        printTwoStacksInAnArray();
+    }
+
+    static void printTwoStacksInAnArray() {
+        TwoStacksInAnArray st = new TwoStacksInAnArray(5);
+        st.push1(1);
+        st.push1(2);
+        // st.push1(3);
+        st.push2(4);
+        st.push2(5);
+        st.push2(6);
+
+        st.pop1();
+        st.pop2();
+        st.pop2();
+        st.pop2();
+        // st.pop2();
     }
 
     static void createStack() {
