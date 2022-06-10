@@ -5,6 +5,7 @@ import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
 import stack.questions.ReverseStackUsingRecursion;
 import stack.questions.ReverseString;
+import stack.questions.SortTheStack;
 import stack.questions.TwoStacksInAnArray;
 import stack.questions.ValidParenthesis;
 
@@ -17,7 +18,19 @@ public class LearningDsa {
         // printDeleteMiddleElement();
         // printValidParenthesis();
         // printInsertAtBottom();
-        printReverseStackUsingRecursion();
+        // printReverseStackUsingRecursion();
+        printSortTheStack();
+    }
+
+    static void printSortTheStack() {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(11);
+        stack.push(2);
+        stack.push(03);
+        stack.push(40);
+        stack.push(15);
+
+        new SortTheStack().sortStack(stack);
     }
 
     static void printReverseStackUsingRecursion() {
