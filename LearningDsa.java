@@ -5,6 +5,7 @@ import stack.questions.CelebrityProblem;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
 import stack.questions.LargestRectangleArea;
+import stack.questions.MaxRectangle;
 import stack.questions.MinimumBracketReversal;
 import stack.questions.NextSmallerElement;
 import stack.questions.RedundantBrackets;
@@ -29,7 +30,20 @@ public class LearningDsa {
         // printMinimumBracketReversal();
         // printNextSmallerElement();
         // printLargestRectangleArea();
-        printCelebrityProblem();
+        // printCelebrityProblem();
+        printMaxRectangle();
+    }
+
+    static void printMaxRectangle() {
+        int[][] matrix = {
+                { 0, 1, 1, 0 },
+                { 1, 1, 1, 1 },
+                { 1, 1, 1, 1 },
+                { 1, 1, 0, 0 }
+        };
+
+        int res = new MaxRectangle().maxRectangle(matrix, 4, 4);
+        System.out.println("Max Rectangle is : " + res);
     }
 
     static void printCelebrityProblem() {
