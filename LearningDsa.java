@@ -2,6 +2,7 @@ import java.util.Stack;
 
 import stack.StackArray;
 import stack.questions.DeleteMiddleElement;
+import stack.questions.InsertAtBottom;
 import stack.questions.ReverseString;
 import stack.questions.TwoStacksInAnArray;
 import stack.questions.ValidParenthesis;
@@ -13,7 +14,19 @@ public class LearningDsa {
         // printTwoStacksInAnArray();
         // printReverseString();
         // printDeleteMiddleElement();
-        printValidParenthesis();
+        // printValidParenthesis();
+        printInsertAtBottom();
+    }
+
+    static void printInsertAtBottom() {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+
+        new InsertAtBottom().insert(stack, 6);
     }
 
     static void printValidParenthesis() {
