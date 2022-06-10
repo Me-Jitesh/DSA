@@ -3,6 +3,7 @@ import java.util.Stack;
 import stack.StackArray;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
+import stack.questions.LargestRectangleArea;
 import stack.questions.MinimumBracketReversal;
 import stack.questions.NextSmallerElement;
 import stack.questions.RedundantBrackets;
@@ -25,7 +26,15 @@ public class LearningDsa {
         // printSortTheStack();
         // printRedundantBrackets();
         // printMinimumBracketReversal();
-        printNextSmallerElement();
+        // printNextSmallerElement();
+        printLargestRectangleArea();
+    }
+
+    static void printLargestRectangleArea() {
+        int[] heights = { 2, 1, 5, 6, 2, 3 };
+
+        int res = new LargestRectangleArea().largestRectangleArea(heights);
+        System.out.println("Largest Rectangle Area is : " + res);
     }
 
     static void printNextSmallerElement() {
