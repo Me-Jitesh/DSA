@@ -3,6 +3,7 @@ import java.util.Stack;
 import stack.StackArray;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
+import stack.questions.RedundantBrackets;
 import stack.questions.ReverseStackUsingRecursion;
 import stack.questions.ReverseString;
 import stack.questions.SortTheStack;
@@ -19,7 +20,21 @@ public class LearningDsa {
         // printValidParenthesis();
         // printInsertAtBottom();
         // printReverseStackUsingRecursion();
-        printSortTheStack();
+        // printSortTheStack();
+        printRedundantBrackets();
+    }
+
+    static void printRedundantBrackets() {
+        // String exp = "((a*b))";
+        // String exp = "(a*b)";
+        String exp = "(ab)";
+
+        boolean res = new RedundantBrackets().redundantBrackets(exp);
+        if (res) {
+            System.out.println("Ha Redundant Hai !");
+        } else {
+            System.out.println("Nahi Redundant Nahi Hai !");
+        }
     }
 
     static void printSortTheStack() {
