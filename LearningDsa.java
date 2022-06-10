@@ -7,6 +7,7 @@ import stack.questions.InsertAtBottom;
 import stack.questions.LargestRectangleArea;
 import stack.questions.MaxRectangle;
 import stack.questions.MinimumBracketReversal;
+import stack.questions.NStacksInAnArray;
 import stack.questions.NextSmallerElement;
 import stack.questions.RedundantBrackets;
 import stack.questions.ReverseStackUsingRecursion;
@@ -31,7 +32,23 @@ public class LearningDsa {
         // printNextSmallerElement();
         // printLargestRectangleArea();
         // printCelebrityProblem();
-        printMaxRectangle();
+        // printMaxRectangle();
+        printNStacksInAnArray();
+    }
+
+    static void printNStacksInAnArray() {
+        NStacksInAnArray nStacksInAnArray = new NStacksInAnArray(6, 5);
+
+        nStacksInAnArray.push(10, 1);
+        nStacksInAnArray.push(20, 1);
+        nStacksInAnArray.push(30, 2);
+
+        nStacksInAnArray.pop(1);
+        nStacksInAnArray.pop(1);
+        // nStacksInAnArray.pop(1);
+        nStacksInAnArray.pop(2);
+        // nStacksInAnArray.pop(2);
+
     }
 
     static void printMaxRectangle() {
