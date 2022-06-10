@@ -1,6 +1,7 @@
 import java.util.Stack;
 
 import stack.StackArray;
+import stack.questions.CelebrityProblem;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
 import stack.questions.LargestRectangleArea;
@@ -27,7 +28,19 @@ public class LearningDsa {
         // printRedundantBrackets();
         // printMinimumBracketReversal();
         // printNextSmallerElement();
-        printLargestRectangleArea();
+        // printLargestRectangleArea();
+        printCelebrityProblem();
+    }
+
+    static void printCelebrityProblem() {
+        int[][] matrix = {
+                { 0, 1, 0 },
+                { 0, 0, 0 },
+                { 0, 1, 0 }
+        };
+
+        int res = new CelebrityProblem().celebrityProblem(matrix, 3);
+        System.out.println("Celebrity is : " + res);
     }
 
     static void printLargestRectangleArea() {
