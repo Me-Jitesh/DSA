@@ -1,4 +1,7 @@
+import java.util.Stack;
+
 import stack.StackArray;
+import stack.questions.DeleteMiddleElement;
 import stack.questions.ReverseString;
 import stack.questions.TwoStacksInAnArray;
 
@@ -7,7 +10,19 @@ public class LearningDsa {
     public static void main(String[] args) {
         // createStack();
         // printTwoStacksInAnArray();
-        printReverseString();
+        // printReverseString();
+        printDeleteMiddleElement();
+    }
+
+    static void printDeleteMiddleElement() {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+
+        new DeleteMiddleElement().delMidElm(stack, stack.size());
     }
 
     static void printReverseString() {
