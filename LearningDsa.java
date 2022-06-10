@@ -4,6 +4,7 @@ import stack.StackArray;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.ReverseString;
 import stack.questions.TwoStacksInAnArray;
+import stack.questions.ValidParenthesis;
 
 public class LearningDsa {
 
@@ -11,7 +12,19 @@ public class LearningDsa {
         // createStack();
         // printTwoStacksInAnArray();
         // printReverseString();
-        printDeleteMiddleElement();
+        // printDeleteMiddleElement();
+        printValidParenthesis();
+    }
+
+    static void printValidParenthesis() {
+
+        String expession = "{([]()}";
+        boolean res = new ValidParenthesis().checkValidParenthesis(expession);
+        if (res) {
+            System.out.println("parethesis is Valid");
+        } else {
+            System.out.println("parethesis is Not Valid");
+        }
     }
 
     static void printDeleteMiddleElement() {
