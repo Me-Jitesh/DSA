@@ -4,6 +4,7 @@ import stack.StackArray;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
 import stack.questions.MinimumBracketReversal;
+import stack.questions.NextSmallerElement;
 import stack.questions.RedundantBrackets;
 import stack.questions.ReverseStackUsingRecursion;
 import stack.questions.ReverseString;
@@ -23,7 +24,16 @@ public class LearningDsa {
         // printReverseStackUsingRecursion();
         // printSortTheStack();
         // printRedundantBrackets();
-        printMinimumBracketReversal();
+        // printMinimumBracketReversal();
+        printNextSmallerElement();
+    }
+
+    static void printNextSmallerElement() {
+        int[] arr = { 2, 1, 4, 3 };
+        int[] res = new NextSmallerElement().nextSmallerElement(arr);
+        for (int i : res) {
+            System.out.println(i);
+        }
     }
 
     static void printMinimumBracketReversal() {
