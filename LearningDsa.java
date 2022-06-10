@@ -1,11 +1,18 @@
 import stack.StackArray;
+import stack.questions.ReverseString;
 import stack.questions.TwoStacksInAnArray;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
         // createStack();
-        printTwoStacksInAnArray();
+        // printTwoStacksInAnArray();
+        printReverseString();
+    }
+
+    static void printReverseString() {
+        String str = "Bonee";
+        new ReverseString().reverseStringUsingStack(str);
     }
 
     static void printTwoStacksInAnArray() {
