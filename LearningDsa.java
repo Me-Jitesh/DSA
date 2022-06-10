@@ -3,6 +3,7 @@ import java.util.Stack;
 import stack.StackArray;
 import stack.questions.CelebrityProblem;
 import stack.questions.DeleteMiddleElement;
+import stack.questions.GetMinimum;
 import stack.questions.InsertAtBottom;
 import stack.questions.LargestRectangleArea;
 import stack.questions.MaxRectangle;
@@ -33,7 +34,25 @@ public class LearningDsa {
         // printLargestRectangleArea();
         // printCelebrityProblem();
         // printMaxRectangle();
-        printNStacksInAnArray();
+        // printNStacksInAnArray();
+        printGetMinimum();
+    }
+
+    static void printGetMinimum() {
+        GetMinimum getMinimum = new GetMinimum();
+
+        getMinimum.push(10);
+        getMinimum.push(18);
+        getMinimum.push(6);
+        getMinimum.push(40);
+
+        getMinimum.pop();
+
+        getMinimum.top();
+
+        getMinimum.isEmpty();
+
+        getMinimum.getMini();
     }
 
     static void printNStacksInAnArray() {
