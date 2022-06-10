@@ -3,6 +3,7 @@ import java.util.Stack;
 import stack.StackArray;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
+import stack.questions.MinimumBracketReversal;
 import stack.questions.RedundantBrackets;
 import stack.questions.ReverseStackUsingRecursion;
 import stack.questions.ReverseString;
@@ -21,7 +22,19 @@ public class LearningDsa {
         // printInsertAtBottom();
         // printReverseStackUsingRecursion();
         // printSortTheStack();
-        printRedundantBrackets();
+        // printRedundantBrackets();
+        printMinimumBracketReversal();
+    }
+
+    static void printMinimumBracketReversal() {
+        String exp = "{{}}{}{{";
+
+        int res = new MinimumBracketReversal().minimumBracketReversal(exp);
+        if (res >= 0) {
+            System.out.println("Minimum Bracket To Reverse " + res);
+        } else {
+            System.out.println("Brackets Odd Hai" + res);
+        }
     }
 
     static void printRedundantBrackets() {
