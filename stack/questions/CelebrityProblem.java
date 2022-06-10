@@ -28,7 +28,7 @@ public class CelebrityProblem {
         int candidate = stack.peek();
 
         // Step3 : Single Element in stack is potential celebrity , so varify it
-        boolean rowCheck = false;
+        // boolean rowCheck = false;
         int zeroCount = 0;
 
         for (int i = 0; i < n; i++) {
@@ -38,12 +38,14 @@ public class CelebrityProblem {
         }
 
         // all zeroes
-        if (zeroCount == n) {
-            rowCheck = true;
+        // if (zeroCount == n) {
+        if (zeroCount != n) {
+            // rowCheck = true;
+            return -1;
         }
 
         // Column Check
-        boolean colCheck = false;
+        // boolean colCheck = false;
         int oneCount = 0;
 
         for (int i = 0; i < n; i++) {
@@ -53,15 +55,18 @@ public class CelebrityProblem {
         }
 
         // all 1 except diagonal element
-        if (oneCount == n - 1) {
-            colCheck = true;
-        }
-
-        if (rowCheck == true && colCheck == true) {
-            return candidate;
-        } else {
+        // if (oneCount == n - 1) {
+        if (oneCount != n - 1) {
+            // colCheck = true;
             return -1;
         }
+
+        // if (rowCheck == true && colCheck == true) {
+        // return candidate;
+        // } else {
+        // return -1;
+        // }
+        return candidate;
     }
 
     private boolean knows(int[][] matrix, int a, int b) {
