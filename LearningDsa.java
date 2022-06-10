@@ -3,6 +3,7 @@ import java.util.Stack;
 import stack.StackArray;
 import stack.questions.DeleteMiddleElement;
 import stack.questions.InsertAtBottom;
+import stack.questions.ReverseStackUsingRecursion;
 import stack.questions.ReverseString;
 import stack.questions.TwoStacksInAnArray;
 import stack.questions.ValidParenthesis;
@@ -15,7 +16,19 @@ public class LearningDsa {
         // printReverseString();
         // printDeleteMiddleElement();
         // printValidParenthesis();
-        printInsertAtBottom();
+        // printInsertAtBottom();
+        printReverseStackUsingRecursion();
+    }
+
+    static void printReverseStackUsingRecursion() {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+
+        new ReverseStackUsingRecursion().reverseStackUsingRecursion(stack);
     }
 
     static void printInsertAtBottom() {
