@@ -1,4 +1,5 @@
 import Implementations.CircularQueueArray;
+import Implementations.DequeArray;
 import Implementations.QueueArray;
 
 public class LearningDsa {
@@ -6,8 +7,25 @@ public class LearningDsa {
     public static void main(String[] args) {
 
         // testQueueArray();
-        testCircularQueueArray();
+        // testCircularQueueArray();
+        testDequeArray();
 
+    }
+
+    static void testDequeArray() {
+        DequeArray dequeArray = new DequeArray(5);
+
+        dequeArray.pushFront(10);
+        dequeArray.pushRear(20);
+
+        dequeArray.getFront();
+        dequeArray.getRear();
+
+        dequeArray.popFront();
+        dequeArray.popRear();
+
+        dequeArray.isEmpty();
+        dequeArray.isFull();
     }
 
     static void testCircularQueueArray() {
