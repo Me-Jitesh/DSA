@@ -1,11 +1,31 @@
+import Implementations.CircularQueueArray;
 import Implementations.QueueArray;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
 
-        testQueueArray();
+        // testQueueArray();
+        testCircularQueueArray();
 
+    }
+
+    static void testCircularQueueArray() {
+        CircularQueueArray circularQueueArray = new CircularQueueArray(5);
+
+        circularQueueArray.enqueue(10);
+        circularQueueArray.enqueue(20);
+        // circularQueueArray.enqueue(30);
+        circularQueueArray.enqueue(40);
+        circularQueueArray.enqueue(50);
+        // circularQueueArray.enqueue(60);
+
+        circularQueueArray.dequeue();
+        circularQueueArray.dequeue();
+        circularQueueArray.dequeue();
+        circularQueueArray.dequeue();
+        circularQueueArray.dequeue();
+        // circularQueueArray.dequeue();
     }
 
     static void testQueueArray() {
