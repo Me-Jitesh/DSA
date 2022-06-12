@@ -6,6 +6,7 @@ import Implementations.DequeArray;
 import Implementations.QueueArray;
 import questions.FirstNegativeInteger;
 import questions.QueueRevarsal;
+import questions.ReverseFirstKElements;
 
 public class LearningDsa {
 
@@ -15,8 +16,21 @@ public class LearningDsa {
         // testCircularQueueArray();
         // testDequeArray();
         // testQueueRevarsal();
-        testFirstNegativeInteger();
+        // testFirstNegativeInteger();
+        testReverseFirstKElements();
 
+    }
+
+    static void testReverseFirstKElements() {
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+        queue.add(40);
+        queue.add(50);
+
+        new ReverseFirstKElements().revFirstKElmQueue(queue, 3);
     }
 
     static void testFirstNegativeInteger() {
