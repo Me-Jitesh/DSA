@@ -1,6 +1,10 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 import Implementations.CircularQueueArray;
 import Implementations.DequeArray;
 import Implementations.QueueArray;
+import questions.QueueRevarsal;
 
 public class LearningDsa {
 
@@ -8,8 +12,19 @@ public class LearningDsa {
 
         // testQueueArray();
         // testCircularQueueArray();
-        testDequeArray();
+        // testDequeArray();
+        testQueueRevarsal();
 
+    }
+
+    static void testQueueRevarsal() {
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+
+        new QueueRevarsal().revApproach1(queue);
     }
 
     static void testDequeArray() {
