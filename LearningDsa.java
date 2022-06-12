@@ -4,6 +4,7 @@ import java.util.Queue;
 import Implementations.CircularQueueArray;
 import Implementations.DequeArray;
 import Implementations.QueueArray;
+import questions.FirstNegativeInteger;
 import questions.QueueRevarsal;
 
 public class LearningDsa {
@@ -13,8 +14,15 @@ public class LearningDsa {
         // testQueueArray();
         // testCircularQueueArray();
         // testDequeArray();
-        testQueueRevarsal();
+        // testQueueRevarsal();
+        testFirstNegativeInteger();
 
+    }
+
+    static void testFirstNegativeInteger() {
+        int[] arr = { -8, 2, 3, -6, 10 };
+
+        new FirstNegativeInteger().firstNegativeInteger(arr, 2);
     }
 
     static void testQueueRevarsal() {
