@@ -41,6 +41,43 @@ public class BinaryTree {
         return root;
     }
 
+    public Node buildTreeFromLevelOrderTravesal(Node root) {
+        Queue<Node> queue = new LinkedList<>();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Data : ");
+        int data = scanner.nextInt();
+        // scanner.close();
+
+        root = new Node(data);
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+
+            Node temp = queue.remove();
+
+            System.out.println("Enter Left Node For : " + temp.data);
+
+            int leftData = scanner.nextInt();
+
+            if (leftData != -1) {
+                temp.left = new Node(leftData);
+                queue.add(temp.left);
+            }
+
+            System.out.println("Enter Right Node For : " + temp.data);
+
+            int rightData = scanner.nextInt();
+
+            if (rightData != -1) {
+                temp.right = new Node(rightData);
+                queue.add(temp.right);
+            }
+        }
+        return root;
+    }
+
     public void levelOrderTraversal(Node root) {
 
         Queue<Node> queue = new LinkedList<>();
