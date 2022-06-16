@@ -16,5 +16,7 @@ public class LearningDsa {
 
         System.out.println("***** Level Order Traversal *******");
         binaryTree.levelOrderTraversal(root);
+        System.out.println("***** In Order Traversal(LNR) *******");
+        binaryTree.inOrderTraversal(root);
     }
 }

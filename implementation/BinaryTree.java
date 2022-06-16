@@ -70,4 +70,15 @@ public class BinaryTree {
             }
         }
     }
+
+    public void inOrderTraversal(Node root) {
+
+        // base case
+        if (root == null) {
+            return;
+        }
+        inOrderTraversal(root.left);
+        System.out.print(root.data + "\t");
+        inOrderTraversal(root.right);
+    }
 }
