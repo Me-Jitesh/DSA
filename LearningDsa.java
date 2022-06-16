@@ -22,5 +22,8 @@ public class LearningDsa {
 
         System.out.println("***** Pre Order Traversal(NLR) *******");
         binaryTree.preOrderTraversal(root);
+
+        System.out.println("***** Post Order Traversal(LRN) *******");
+        binaryTree.postOrderTraversal(root);
     }
 }

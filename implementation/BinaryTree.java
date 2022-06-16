@@ -81,7 +81,7 @@ public class BinaryTree {
         System.out.print(root.data + "\t");
         inOrderTraversal(root.right);
     }
-  
+
     public void preOrderTraversal(Node root) {
 
         // base case
@@ -91,5 +91,16 @@ public class BinaryTree {
         System.out.print(root.data + "\t");
         preOrderTraversal(root.left);
         preOrderTraversal(root.right);
+    }
+
+    public void postOrderTraversal(Node root) {
+
+        // base case
+        if (root == null) {
+            return;
+        }
+        postOrderTraversal(root.left);
+        postOrderTraversal(root.right);
+        System.out.print(root.data + "\t");
     }
 }
