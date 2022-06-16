@@ -1,14 +1,20 @@
 import implementation.BinaryTree;
 import implementation.BinaryTree.Node;
+import questions.CountNoOfLeafNodes;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
-        testBinaryTree();
+        // testBinaryTree();
+        testNoOfLeaf();
+    }
+
+    static void testNoOfLeaf() {
+        Node root = new BinaryTree().buildTree(null);
+        new CountNoOfLeafNodes().noOfLeafNodes(root);
     }
 
     static void testBinaryTree() {
-
         BinaryTree binaryTree = new BinaryTree();
 
         // System.out.println("***** Build Tree *******");
