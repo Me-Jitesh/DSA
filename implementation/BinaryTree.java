@@ -1,10 +1,12 @@
 package implementation;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTree {
 
-    class Node {
+    public class Node {
         int data;
         Node left;
         Node right;
@@ -37,5 +39,35 @@ public class BinaryTree {
         root.right = buildTree(root.right);
 
         return root;
+    }
+
+    public void levelOrderTraversal(Node root) {
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        queue.add(null); // Separator to identify level
+
+        while (!queue.isEmpty()) {
+
+            Node temp = queue.remove();
+
+            if (temp == null) { // old level completed
+                System.out.println();
+                if (!queue.isEmpty()) { // queue still has some child element
+                    queue.add(null);
+                }
+            } else {
+
+                System.out.print(temp.data + "\t");
+
+                if (temp.left != null) {
+                    queue.add(temp.left);
+                }
+
+                if (temp.right != null) {
+                    queue.add(temp.right);
+                }
+            }
+        }
     }
 }
