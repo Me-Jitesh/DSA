@@ -19,5 +19,8 @@ public class LearningDsa {
         NumberConversion.decimalToAnyBase(5, 4);
         NumberConversion.decimalToAnyBase(5, 8);
         NumberConversion.decimalToAnyBase(5, 16);
+
+        NumberConversion.anyBaseToDecimal(101, 2);
+        NumberConversion.anyBaseToDecimal(5, 8);
     }
 }
