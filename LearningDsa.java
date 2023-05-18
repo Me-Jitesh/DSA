@@ -1,3 +1,4 @@
+import Mathematics.CountDigits;
 import Mathematics.FastExponentiation;
 import Mathematics.NumberConversion;
 import Mathematics.ReverseNumber;
@@ -7,15 +8,20 @@ public class LearningDsa {
     public static void main(String[] args) {
         // Testing
         // fastExpoTest();
-        // NumberConversionTest();
-        reverseNumTest();
+        // numberConversionTest();
+        // reverseNumTest();
+        countDigitsTest();
+    }
+
+    static void countDigitsTest() {
+        CountDigits.countDigitsByUsingLog(123456987);
     }
 
     static void reverseNumTest() {
         ReverseNumber.reverseNum(123456);
     }
 
-    static void NumberConversionTest() {
+    static void numberConversionTest() {
         NumberConversion.decimalToAnyBase(5, 2);
         NumberConversion.decimalToAnyBase(5, 4);
         NumberConversion.decimalToAnyBase(5, 8);
