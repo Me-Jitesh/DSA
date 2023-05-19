@@ -2,6 +2,7 @@ import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
 import Mathematics.FastExponentiation;
 import Mathematics.NumberConversion;
+import Mathematics.PrimeNumber;
 import Mathematics.ReverseNumber;
 
 public class LearningDsa {
@@ -12,7 +13,12 @@ public class LearningDsa {
         // numberConversionTest();
         // reverseNumTest();
         // countDigitsTest();
-        armstrongNumberTest();
+        // armstrongNumberTest();
+        primeNumbersTest();
+    }
+
+    static void primeNumbersTest() {
+        PrimeNumber.primeNumbers(45);
     }
 
     static void armstrongNumberTest() {
