@@ -4,6 +4,7 @@ import Mathematics.FastExponentiation;
 import Mathematics.NumberConversion;
 import Mathematics.PrimeNumber;
 import Mathematics.ReverseNumber;
+import Mathematics.SieveOfEratosthenes;
 
 public class LearningDsa {
 
@@ -14,7 +15,12 @@ public class LearningDsa {
         // reverseNumTest();
         // countDigitsTest();
         // armstrongNumberTest();
-        primeNumbersTest();
+        // primeNumbersTest();
+        sieveOfEratosthenesTest();
+    }
+
+    static void sieveOfEratosthenesTest() {
+        SieveOfEratosthenes.sieveAlgorithm(40);
     }
 
     static void primeNumbersTest() {
