@@ -1,3 +1,4 @@
+import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
 import Mathematics.FastExponentiation;
 import Mathematics.NumberConversion;
@@ -10,7 +11,12 @@ public class LearningDsa {
         // fastExpoTest();
         // numberConversionTest();
         // reverseNumTest();
-        countDigitsTest();
+        // countDigitsTest();
+        armstrongNumberTest();
+    }
+
+    static void armstrongNumberTest() {
+        ArmstrongNumber.armstrongNumber(153);
     }
 
     static void countDigitsTest() {
