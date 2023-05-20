@@ -1,6 +1,7 @@
 import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
 import Mathematics.FastExponentiation;
+import Mathematics.NewtonRaphsonSqrRoot;
 import Mathematics.NumberConversion;
 import Mathematics.PrimeNumber;
 import Mathematics.ReverseNumber;
@@ -16,7 +17,12 @@ public class LearningDsa {
         // countDigitsTest();
         // armstrongNumberTest();
         // primeNumbersTest();
-        sieveOfEratosthenesTest();
+        // sieveOfEratosthenesTest();
+        newtonRaphsonSqrRootTest();
+    }
+
+    static void newtonRaphsonSqrRootTest() {
+        NewtonRaphsonSqrRoot.newtonRaphsonSqRoot(36);
     }
 
     static void sieveOfEratosthenesTest() {
