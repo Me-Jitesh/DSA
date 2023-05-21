@@ -4,13 +4,13 @@ import Mathematics.FastExponentiation;
 import Mathematics.NewtonRaphsonSqrRoot;
 import Mathematics.NumberConversion;
 import Mathematics.PrimeNumber;
+import Mathematics.PrintAllDivisors;
 import Mathematics.ReverseNumber;
 import Mathematics.SieveOfEratosthenes;
 
 public class LearningDsa {
 
     public static void main(String[] args) {
-        // Testing
         // fastExpoTest();
         // numberConversionTest();
         // reverseNumTest();
@@ -18,7 +18,12 @@ public class LearningDsa {
         // armstrongNumberTest();
         // primeNumbersTest();
         // sieveOfEratosthenesTest();
-        newtonRaphsonSqrRootTest();
+        // newtonRaphsonSqrRootTest();
+        printAllDivisorsTest();
+    }
+
+    static void printAllDivisorsTest() {
+        PrintAllDivisors.printAllDivisors(10);
     }
 
     static void newtonRaphsonSqrRootTest() {
