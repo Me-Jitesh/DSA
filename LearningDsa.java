@@ -1,6 +1,7 @@
 import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
 import Mathematics.FastExponentiation;
+import Mathematics.GreatestCommonDivisor;
 import Mathematics.NewtonRaphsonSqrRoot;
 import Mathematics.NumberConversion;
 import Mathematics.PrimeNumber;
@@ -19,7 +20,12 @@ public class LearningDsa {
         // primeNumbersTest();
         // sieveOfEratosthenesTest();
         // newtonRaphsonSqrRootTest();
-        printAllDivisorsTest();
+        // printAllDivisorsTest();
+        greatestCommonDivisorTest();
+    }
+
+    static void greatestCommonDivisorTest() {
+        GreatestCommonDivisor.GCD(45, 90);
     }
 
     static void printAllDivisorsTest() {
