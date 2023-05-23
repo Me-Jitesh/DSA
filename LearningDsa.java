@@ -1,5 +1,6 @@
 import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
+import Mathematics.EuclideanGcd;
 import Mathematics.FastExponentiation;
 import Mathematics.GreatestCommonDivisor;
 import Mathematics.NewtonRaphsonSqrRoot;
@@ -11,63 +12,68 @@ import Mathematics.SieveOfEratosthenes;
 
 public class LearningDsa {
 
-    public static void main(String[] args) {
-        // fastExpoTest();
-        // numberConversionTest();
-        // reverseNumTest();
-        // countDigitsTest();
-        // armstrongNumberTest();
-        // primeNumbersTest();
-        // sieveOfEratosthenesTest();
-        // newtonRaphsonSqrRootTest();
-        // printAllDivisorsTest();
-        greatestCommonDivisorTest();
-    }
+  public static void main(String[] args) {
+    // fastExpoTest();
+    // numberConversionTest();
+    // reverseNumTest();
+    // countDigitsTest();
+    // armstrongNumberTest();
+    // primeNumbersTest();
+    // sieveOfEratosthenesTest();
+    // newtonRaphsonSqrRootTest();
+    // printAllDivisorsTest();
+    // greatestCommonDivisorTest();
+    euclideanGcdTest();
+  }
 
-    static void greatestCommonDivisorTest() {
-        GreatestCommonDivisor.GCD(45, 90);
-    }
+  static void euclideanGcdTest() {
+    EuclideanGcd.euclideanGcd(45, 90);
+  }
 
-    static void printAllDivisorsTest() {
-        PrintAllDivisors.printAllDivisors(10);
-    }
+  static void greatestCommonDivisorTest() {
+    GreatestCommonDivisor.GCD(45, 90);
+  }
 
-    static void newtonRaphsonSqrRootTest() {
-        NewtonRaphsonSqrRoot.newtonRaphsonSqRoot(36);
-    }
+  static void printAllDivisorsTest() {
+    PrintAllDivisors.printAllDivisors(10);
+  }
 
-    static void sieveOfEratosthenesTest() {
-        SieveOfEratosthenes.sieveAlgorithm(40);
-    }
+  static void newtonRaphsonSqrRootTest() {
+    NewtonRaphsonSqrRoot.newtonRaphsonSqRoot(36);
+  }
 
-    static void primeNumbersTest() {
-        PrimeNumber.primeNumbers(45);
-    }
+  static void sieveOfEratosthenesTest() {
+    SieveOfEratosthenes.sieveAlgorithm(40);
+  }
 
-    static void armstrongNumberTest() {
-        ArmstrongNumber.armstrongNumber(153);
-    }
+  static void primeNumbersTest() {
+    PrimeNumber.primeNumbers(45);
+  }
 
-    static void countDigitsTest() {
-        CountDigits.countDigitsByUsingLog(123456987);
-    }
+  static void armstrongNumberTest() {
+    ArmstrongNumber.armstrongNumber(153);
+  }
 
-    static void reverseNumTest() {
-        ReverseNumber.reverseNum(123456);
-    }
+  static void countDigitsTest() {
+    CountDigits.countDigitsByUsingLog(123456987);
+  }
 
-    static void numberConversionTest() {
-        NumberConversion.decimalToAnyBase(5, 2);
-        NumberConversion.decimalToAnyBase(5, 4);
-        NumberConversion.decimalToAnyBase(5, 8);
-        NumberConversion.decimalToAnyBase(5, 16);
+  static void reverseNumTest() {
+    ReverseNumber.reverseNum(123456);
+  }
 
-        NumberConversion.anyBaseToDecimal(101, 2);
-        NumberConversion.anyBaseToDecimal(5, 8);
-    }
+  static void numberConversionTest() {
+    NumberConversion.decimalToAnyBase(5, 2);
+    NumberConversion.decimalToAnyBase(5, 4);
+    NumberConversion.decimalToAnyBase(5, 8);
+    NumberConversion.decimalToAnyBase(5, 16);
 
-    static void fastExpoTest() {
-        FastExponentiation.fastExpo(2, 7);
-        FastExponentiation.fastExpo(2, 4);
-    }
+    NumberConversion.anyBaseToDecimal(101, 2);
+    NumberConversion.anyBaseToDecimal(5, 8);
+  }
+
+  static void fastExpoTest() {
+    FastExponentiation.fastExpo(2, 7);
+    FastExponentiation.fastExpo(2, 4);
+  }
 }
