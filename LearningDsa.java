@@ -1,5 +1,6 @@
 import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
+import Mathematics.EfficientEuclideanGcd;
 import Mathematics.EuclideanGcd;
 import Mathematics.FastExponentiation;
 import Mathematics.GreatestCommonDivisor;
@@ -23,7 +24,12 @@ public class LearningDsa {
     // newtonRaphsonSqrRootTest();
     // printAllDivisorsTest();
     // greatestCommonDivisorTest();
-    euclideanGcdTest();
+    // euclideanGcdTest();
+    efficientEuclideanGcdTest();
+  }
+
+  static void efficientEuclideanGcdTest() {
+    EfficientEuclideanGcd.efficientEuclideanGcd(45, 90);
   }
 
   static void euclideanGcdTest() {
