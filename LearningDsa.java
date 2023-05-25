@@ -4,6 +4,7 @@ import Mathematics.EfficientEuclideanGcd;
 import Mathematics.EuclideanGcd;
 import Mathematics.FastExponentiation;
 import Mathematics.GreatestCommonDivisor;
+import Mathematics.Lcm;
 import Mathematics.NewtonRaphsonSqrRoot;
 import Mathematics.NumberConversion;
 import Mathematics.PrimeNumber;
@@ -25,7 +26,12 @@ public class LearningDsa {
     // printAllDivisorsTest();
     // greatestCommonDivisorTest();
     // euclideanGcdTest();
-    efficientEuclideanGcdTest();
+    // efficientEuclideanGcdTest();
+    lcmTest();
+  }
+
+  static void lcmTest() {
+    Lcm.findLcm(45, 90);
   }
 
   static void efficientEuclideanGcdTest() {
