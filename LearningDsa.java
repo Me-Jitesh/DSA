@@ -3,6 +3,7 @@ import Mathematics.CountDigits;
 import Mathematics.EfficientEuclideanGcd;
 import Mathematics.EuclideanGcd;
 import Mathematics.FastExponentiation;
+import Mathematics.FastExponentiationWithLimit;
 import Mathematics.GreatestCommonDivisor;
 import Mathematics.Lcm;
 import Mathematics.NewtonRaphsonSqrRoot;
@@ -27,7 +28,12 @@ public class LearningDsa {
     // greatestCommonDivisorTest();
     // euclideanGcdTest();
     // efficientEuclideanGcdTest();
-    lcmTest();
+    // lcmTest();
+    fastExponentiationWithLimitTest();
+  }
+
+  static void fastExponentiationWithLimitTest() {
+    FastExponentiationWithLimit.fastExponentiationWithLimit(2, 1000000000, 100);
   }
 
   static void lcmTest() {
