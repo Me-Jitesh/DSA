@@ -2,6 +2,7 @@ import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
 import Mathematics.EfficientEuclideanGcd;
 import Mathematics.EuclideanGcd;
+import Mathematics.Factorial;
 import Mathematics.FastExponentiation;
 import Mathematics.FastExponentiationWithLimit;
 import Mathematics.GreatestCommonDivisor;
@@ -29,7 +30,12 @@ public class LearningDsa {
     // euclideanGcdTest();
     // efficientEuclideanGcdTest();
     // lcmTest();
-    fastExponentiationWithLimitTest();
+    // fastExponentiationWithLimitTest();
+    factorialTest();
+  }
+
+  static void factorialTest() {
+    Factorial.fact(5);
   }
 
   static void fastExponentiationWithLimitTest() {
