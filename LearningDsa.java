@@ -13,6 +13,7 @@ import Mathematics.PrimeNumber;
 import Mathematics.PrintAllDivisors;
 import Mathematics.ReverseNumber;
 import Mathematics.SieveOfEratosthenes;
+import Mathematics.TrailingZerosInFactorial;
 
 public class LearningDsa {
 
@@ -31,7 +32,12 @@ public class LearningDsa {
     // efficientEuclideanGcdTest();
     // lcmTest();
     // fastExponentiationWithLimitTest();
-    factorialTest();
+    // factorialTest();
+    findTrailingZerosInFactorialTest();
+  }
+
+  static void findTrailingZerosInFactorialTest() {
+    TrailingZerosInFactorial.findTrailingZerosInFactorial(5);
   }
 
   static void factorialTest() {
