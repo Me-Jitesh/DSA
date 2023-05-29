@@ -1,3 +1,4 @@
+import BitManipulation.PrintBits;
 import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
 import Mathematics.EfficientEuclideanGcd;
@@ -33,7 +34,12 @@ public class LearningDsa {
     // lcmTest();
     // fastExponentiationWithLimitTest();
     // factorialTest();
-    findTrailingZerosInFactorialTest();
+    // findTrailingZerosInFactorialTest();
+    printBitsTest();
+  }
+
+  static void printBitsTest() {
+    PrintBits.printBits(5);
   }
 
   static void findTrailingZerosInFactorialTest() {
