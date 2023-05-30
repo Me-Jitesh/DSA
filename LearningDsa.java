@@ -1,4 +1,5 @@
 import BitManipulation.PrintBits;
+import BitManipulation.PrintOddEven;
 import Mathematics.ArmstrongNumber;
 import Mathematics.CountDigits;
 import Mathematics.EfficientEuclideanGcd;
@@ -35,7 +36,13 @@ public class LearningDsa {
     // fastExponentiationWithLimitTest();
     // factorialTest();
     // findTrailingZerosInFactorialTest();
-    printBitsTest();
+    // printBitsTest();
+    printOddEvenTest();
+  }
+
+  static void printOddEvenTest() {
+    PrintOddEven.printOddEven(5);
+    PrintOddEven.printOddEven(4);
   }
 
   static void printBitsTest() {
