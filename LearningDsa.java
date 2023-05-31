@@ -1,3 +1,4 @@
+import BitManipulation.CheckSetBit;
 import BitManipulation.PrintBits;
 import BitManipulation.PrintOddEven;
 import Mathematics.ArmstrongNumber;
@@ -37,7 +38,12 @@ public class LearningDsa {
     // factorialTest();
     // findTrailingZerosInFactorialTest();
     // printBitsTest();
-    printOddEvenTest();
+    // printOddEvenTest();
+    checkSetBitTest();
+  }
+
+  static void checkSetBitTest() {
+    CheckSetBit.isBitSet(15, 0);
   }
 
   static void printOddEvenTest() {
