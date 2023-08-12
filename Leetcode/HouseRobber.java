@@ -53,4 +53,21 @@ public class HouseRobber {
         }
         return t[nums.length];
     }
+
+    private int solveBottomUpConstantSpace(int[] nums){
+
+        int prevOfprev= 0;
+        int prev = nums[0];
+
+        for(int i = 2; i <= nums.length; i++){
+            int steal = nums[i-1]  + prevOfprev;
+            int skip = prev;
+
+            // temp = maximum stolen money till i house
+            int temp = Math.max(steal,skip);
+            prevOfprev=prev;
+            prev = temp;
+        }
+        return prev;
+    }
 }
