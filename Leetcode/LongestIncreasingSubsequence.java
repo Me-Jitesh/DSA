@@ -8,11 +8,13 @@ public class LongestIncreasingSubsequence {
 
 //        return solveRecursion(nums, 0, -1);
 
-        int[][] dp = new int[nums.length + 1][nums.length + 1];
-        for (int[] x : dp)
-            Arrays.fill(x, -1);
+//        int[][] dp = new int[nums.length + 1][nums.length + 1];
+//        for (int[] x : dp)
+//            Arrays.fill(x, -1);
+//
+//        return solveRecursionMemoi(nums, 0, -1, dp);
 
-        return solveRecursionMemoi(nums, 0, -1, dp);
+        return solveBottomUp(nums);
     }
 
     private int solveRecursion(int[] nums, int i, int prev) {
@@ -52,5 +54,24 @@ public class LongestIncreasingSubsequence {
             return dp[i][prev] = Math.max(take, skip);
 
         return Math.max(take, skip);
+    }
+
+    private int solveBottomUp(int[] nums) {
+
+        int maxLIS = 1; // 1 for case like {7,7,7,7,7}
+
+        int t[] = new int[nums.length + 1];
+        Arrays.fill(t, 1);
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) {
+                    //    t[i] = t[j]+1; // gives problem if subsequence reset anywhere
+                    t[i] = Math.max(t[j] + 1, t[i]);
+                    maxLIS = Math.max(maxLIS, t[i]);
+                }
+            }
+        }
+        return maxLIS;
     }
 }
