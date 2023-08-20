@@ -2,6 +2,8 @@ package Leetcode;
 
 // 70. Climbing Stairs
 
+import java.util.Arrays;
+
 public class ClimbingStairs {
 
   public int climbStairs(int n) {
