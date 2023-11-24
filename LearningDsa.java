@@ -25,16 +25,19 @@ public class LearningDsa {
         // findTrailingZerosInFactorialTest();
         // printBitsTest();
         // printOddEvenTest();
-//    checkSetBitTest();
+        //    checkSetBitTest();
         graphUndirected();
     }
 
     static void graphUndirected() {
-        int vertices = 8;
-        int[][] arr = {{0, 1}, {0, 2}, {0, 5}, {1, 5}, {2, 3}, {2, 4}, {2, 5}, {6, 7}, {7, 7}}; // no of edges 9 = arr.length
+        int vertices = 9;
+        int[][] arr = {{0, 1}, {0, 2}, {0, 3}, {1, 3}, {1, 4}, {2, 3}, {2, 5}, {2, 6}, {3, 4}, {7, 8}, {8, 8}}; // no of edges 11 = arr.length
 
         GraphUndirected graph = new GraphUndirected();
         int[][] adjMatrix = graph.adjMatrix(vertices, arr);
+
+        System.out.println("******** Print Using DFS ********");
+        graph.dfs(adjMatrix);
     }
 
     static void checkSetBitTest() {

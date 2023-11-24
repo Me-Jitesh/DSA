@@ -11,4 +11,26 @@ public class GraphUndirected {
         }
         return adj;
     }
+
+    public void dfs(int[][] adjMatrix) {
+        int[] visited = new int[adjMatrix.length]; // length = no of vertices
+
+        for (int i = 0; i < visited.length; i++) {
+            if (visited[i] == 0) {
+                solveDFS(i, adjMatrix, visited);
+            }
+        }
+    }
+
+    private void solveDFS(int row, int[][] adjMatrix, int[] visited) {
+        System.out.println("Vertex = " + row);
+        visited[row] = 1;
+
+        for (int col = 0; col < adjMatrix.length; col++) {
+            if (adjMatrix[row][col] == 1 && visited[col] == 0) {
+//                System.out.println(row + "  =>  " + col); // Print Path
+                solveDFS(col, adjMatrix, visited);
+            }
+        }
+    }
 }
