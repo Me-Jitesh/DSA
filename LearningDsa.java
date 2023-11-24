@@ -38,6 +38,9 @@ public class LearningDsa {
 
         System.out.println("******** Print Using DFS ********");
         graph.dfs(adjMatrix);
+
+        System.out.println("******** Print Using BFS ********");
+        graph.bfs(adjMatrix);
     }
 
     static void checkSetBitTest() {

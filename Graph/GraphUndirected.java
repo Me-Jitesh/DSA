@@ -1,5 +1,8 @@
 package Graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class GraphUndirected {
 
     public int[][] adjMatrix(int vertices, int[][] arr) {
@@ -30,6 +33,36 @@ public class GraphUndirected {
             if (adjMatrix[row][col] == 1 && visited[col] == 0) {
 //                System.out.println(row + "  =>  " + col); // Print Path
                 solveDFS(col, adjMatrix, visited);
+            }
+        }
+    }
+
+    public void bfs(int[][] adjMatrix) {
+        int[] visited = new int[adjMatrix.length];
+
+        for (int i = 0; i < visited.length; i++) {
+            if (visited[i] == 0) {
+                solveBFS(i, adjMatrix, visited);
+            }
+        }
+    }
+
+    private void solveBFS(int sv, int[][] adjMatrix, int[] visited) {
+
+        Queue<Integer> q = new LinkedList<>();
+
+        q.add(sv);
+        visited[sv] = 1;
+
+        while (!q.isEmpty()) {
+            Integer v = q.poll();
+            System.out.println("Vertex => " + v);
+
+            for (int ev = 0; ev < adjMatrix.length; ev++) {
+                if (adjMatrix[v][ev] == 1 && visited[ev] == 0) {
+                    q.add(ev);
+                    visited[ev] = 1;
+                }
             }
         }
     }
